@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta http-equiv="Content-Type" content="Text/html" charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/png" href="../../assets/img/logo2.png">
+    <title>KUIS 2 | ARTISTIK</title>
+
+
+    <!-- style -->
+    <link rel="stylesheet" type="text/css" href="../../assets/style/semua.css">
+    <link rel="stylesheet" type="text/css" href="../../assets/style/tes.css">
+    <link rel="stylesheet" type="text/css" href="../../assets/style/tesHP.css">
+
+    <!-- prompt -->
+    <link rel="stylesheet" href="../../assets/style/popupmodal.css">
+
+    <!-- matjax -->
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+    <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+
+    
+</head>
+<body>
+
+    <header>
+        <div class="jdl1">
+            <h2>MATEMATIKA</h2>
+            <h2>Aritmatika Sosial</h2>
+        </div>
+    </header>
+
+    <!-- <div class="back" onclick="home1()">
+            <img src="assets/img/home.png">
+    </div> -->
+
+    <div class="hasilnya">
+        <br>
+        <center>
+            <h2>KUIS 2 | Persentase Untung Rugi dan Bobot Produk</h2>
+        </center>
+        <table>
+            <tr>
+                <td>Nama</td>
+                <td>:</td>
+                <td class="namanya">-</td>
+            </tr>
+            <tr>
+                <td>Sekolah</td>
+                <td>:</td>
+                <td class="sekolahnya">-</td>
+            </tr>
+            <tr>
+                <td>Kelas</td>
+                <td>:</td>
+                <td class="kelasnya"></td>
+            </tr>
+            <tr>
+                <td>Tanggal</td>
+                <td>:</td>
+                <td class="tanggalnya"></td>
+            </tr>
+            <tr>
+                <td>Nilai</td>
+                <td>:</td>
+                <td class="nilainya"></td>
+            </tr>
+        </table>
+        <br>
+        <center>
+            <a href="../../index.html"><button class="btn selesai">HOME</button></a>
+            <a href="../../materi/materi300.html"><button class="btn selesai">Materi Selanjutnya</button></a>
+        </center>
+        <br>
+    </div>
+
+
+    <script src="../../assets/js/polyfill.js"></script>
+    <script src="../../assets/js/popupmodal-min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js" integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+
+    <script>
+        document.querySelector('.namanya').innerHTML = localStorage.getItem('nama');
+        document.querySelector('.sekolahnya').innerHTML = localStorage.getItem('sekolah');
+        document.querySelector('.kelasnya').innerHTML = localStorage.getItem('kelas');
+        document.querySelector('.tanggalnya').innerHTML = localStorage.getItem('harinya');
+        document.querySelector('.nilainya').innerHTML = localStorage.getItem('hasilnya');
+    </script>
+</body>

@@ -1,0 +1,132 @@
+body{
+	background-color: #ffe194 !important;
+}
+
+.toppart{
+	height:12%;
+	display: flex;
+	align-items: center;
+	background-color: #ffb319;
+}
+
+.logo{
+	width: 50px;
+	cursor: pointer;
+	padding-top:1%
+}
+
+.TT{
+	flex:1;
+	text-align:center;
+	color:#fff;
+	font-size:55px;
+	font-family:Pacifico-Regular;
+	/*padding-top:1%*/
+}
+
+.row{
+	display:flex;
+	height:88%;
+	align-items:center;
+}
+
+.col{
+	flex-basis:50%;
+	padding-top: 10%;
+}
+
+h4{
+	color:black;
+	font-size:30px;
+}
+
+p{
+	color:black;
+	font-size:14px;
+	line-height:15px;
+}
+
+button{
+	width:180px;
+	color:#000;
+	font-size:12px;
+	padding:12px 0;
+	background: #fff;
+	border:0;
+	border-radius:20px;
+	outline: none;
+	margin:30px;
+}
+
+.nav-link{
+	color:#ffff;
+}
+
+.active{
+	background-color:#b8dfd8 !important;
+}
+
+.scroll{
+  width: 560px;
+  background: #4FD0C5;
+  padding: 10px;
+  overflow: scroll;
+  height: 400px;
+  
+  /*script tambahan khusus untuk IE */
+  scrollbar-face-color: #CE7E00; 
+  scrollbar-shadow-color: #FFFFFF; 
+  scrollbar-highlight-color: #6F4709; 
+  scrollbar-3dlight-color: #11111; 
+  scrollbar-darkshadow-color: #6F4709; 
+  scrollbar-track-color: #FFE8C1; 
+  scrollbar-arrow-color: #6F4709;
+}
+
+h5{
+	color:black;
+}
+
+footer{
+	background-color:#F9BE02;
+	color:black;
+}
+
+.row{
+	color: black;
+	padding: 0px 20px;
+}
+
+.mulai{
+	border-radius: 15px;
+}
+
+/* CSS HANDPHONE */
+@media screen and (max-width: 900px) {
+    .col{
+			flex-basis:50%;
+			padding-top: 40%;
+		}
+
+		.TT{
+			flex:1;
+			text-align:center;
+			color:#fff;
+			font-size:30px;
+			font-family:Pacifico-Regular;
+			/*padding-top:1%*/
+		}
+
+		.scroll{
+			width: 430px;
+			background: #4FD0C5;
+			padding: 10px;
+			overflow: scroll;
+			height: 400px;
+}
+
+
+@font-face{
+	font-family:"Pacifico-Regular";
+	src:url(../fonts/Pacifico-Regular.ttf);
+}

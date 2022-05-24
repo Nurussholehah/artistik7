@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/png" href="../../assets/img/ikon.png">
+    <title>KUIS 2 | ARTISTIK</title>
+
+    <!-- style -->
+    <link rel="stylesheet" type="text/css" href="../../assets/style/semua.css">
+    <link rel="stylesheet" type="text/css" href="../../assets/style/materi.css">
+    <link rel="stylesheet" href="../../assets/style/kuis.css">
+
+    
+</head>
+<body>
+    <div class="jdl1">
+        <div class="back2" >
+            <a href="../../index.html">
+                <img src="../../assets/img/ikon2.png">
+            </a>
+        </div>
+        <h2>MATEMATIKA</h2>
+        <h2>Arimatika Sosial</h2>
+    </div>
+    <div class="jdl2">
+        <h3> Kuis 2 | Persentase Untung Rugi dan Bobot Produk</h3>
+    </div>
+
+    <div class="isi2">
+        <div class="materinya setengah">
+            
+            <div class="tuju2 lah">
+                <center>
+                    <h3 class="textdt">PETUNJUK</h3>
+                </center>
+                <ol>
+                    <li>Kuis ini terdiri dari 10 soal berupa pilihan ganda.</li>
+                    <li>Setiap soal memiliki bobot poin sebanyak 10 poin.</li>
+                    <li>Silahkan lengkapi data diri Anda pada form yang telah disediakan.</li>
+                    <li>Tekan "Mulai" jika Anda sudah melengkapi data diri.</li>
+                </ol>
+            </div>
+            <div class="bgdt">
+                <center>
+                    <h3 class="textdt">DATA DIRI</h3>
+                </center>
+                <br>
+                <table class="tdt">
+                    <tr>
+                        <td>Nama :</td>
+                    </tr>
+                    <tr>
+                        <td><input type="text" id="nama" class="maju" placeholder="Masukkan nama anda . . . "></td>
+                    </tr>
+                    <tr>
+                        <td>Sekolah :</td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <select id="sekolah" name="sekolah" class="mundur" aria-placeholder="-PILIH SEKOLAH-">
+                                <option value="0" selected="selected">-- PILIH SEKOLAH --</option>
+                                <option value="SMP Negeri 2 Banjarmasin">SMP Negeri 13 Banjarmasin</option>
+                                <option value="SMP Negeri 9 Banjarmasin">SMP Negeri 9 Banjarmasin</option>
+                            </select>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Kelas :</td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <select id="kelas" name="kelas" class="maju aaa" aria-placeholder="-PILIH SEKOLAH-">
+                                <option value="0" selected="selected">-- PILIH KELAS --</option>
+                                <option value="1A">7A</option>
+                                <option value="2B">7B</option>
+                                <option value="3C">7C</option>
+                                <option value="4D">7D</option>
+                                <option value="5E">7E</option>
+                                <option value="6F">7F</option>
+                                <option value="7G">7G</option>
+                            </select>
+                        </td>
+                    </tr>
+                </table>
+
+                <div class="lanjut">Mulai</div>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        let mulai = document.querySelector('.lanjut');
+        let nama = document.getElementById('nama');
+        let sekolah = document.getElementById('sekolah');
+        let kelas = document.getElementById('kelas');
+        mulai.addEventListener('click', function(){
+            if(nama.value =="" || sekolah.value =="" || kelas.value ==""){
+                alert("Isi kolom nama terlebih dahulu!")
+            }else{
+                localStorage.setItem('nama', nama.value)
+                localStorage.setItem('sekolah', sekolah.value)
+                localStorage.setItem('kelas', kelas.value)
+                window.location = "soalnya.html"
+            }
+        })
+    </script>
+
+</body>

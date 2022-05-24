@@ -1,0 +1,293 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/png" href="../assets/img/ikon.png">
+    <title>ARTISTIK</title>
+
+    <!--bootstrap-->
+    <link rel="stylesheet" href="../assets/css/bootstrap.min.css">
+
+    <!-- matjax -->
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+    <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+
+
+    <!-- style -->
+    <link rel="stylesheet" type="text/css" href="../assets/style/semua.css">
+    <link rel="stylesheet" type="text/css" href="../assets/style/materi.css">    
+</head>
+
+<body>
+    <!-- tampilan hp -->
+    <button class="btnSide" onclick="openSide()">
+        <img src="../assets/img/bar.png">
+    </button>
+    <div class="sideNav sideNavDisplay" id="sideNav">
+        <a href="javascript:void(0)" class="tutup" onclick="closeSide()">
+            <img src="../assets/img/close.png">
+        </a>
+        <div class="isinav">
+            <div class="listMateri">
+                <center><a href="../index.html"><img src="../assets/img/ikon2.png"></a></center><br>
+                <hr>
+                <button class="dropdown-btn">1.PENJUALAN DAN PEMBELIAN
+                <img src="../assets/img/drop.png"></a>
+                </button>
+                <div class="dropdown-container">
+                    <a href="materi100.html">Ayo Lihat!</a>
+                    <a href="materi111.html">1.1. Nilai Produk</a>
+                    <a href="materi121.html">1.2. Untung Rugi</a>
+                    <a href="../kuis/kuis1/index.html">Kuis</a>
+                </div>
+                 <button class="dropdown-btn">2. PERSENTASE UNTUNG RUGI DAN BOBOT PRODUK
+                    <img src="../assets/img/drop.png"></a>
+                </button>
+                <div class="dropdown-container" style="display: block;">
+                    <a href="materi200.html">Ayo Lihat!</a>
+                    <a href="materi211.html" class="active">2.1. Persentase Untung dan Rugi</a>
+                    <a href="materi221.html">2.2. Bobot Produk</a>
+                    <a href="../kuis/kuis2/index.html">Kuis</a>
+                </div>
+                <button class="dropdown-btn">3. DISKON, PAJAK, DAN BUNGA TUNGGAL
+                    <img src="../assets/img/drop.png"></a>
+                </button>
+                <div class="dropdown-container">
+                    <a href="materi300.html">Ayo Lihat!</a>
+                    <a href="materi311.html">3.1. Diskon</a>
+                    <a href="materi321.html">3.2. Pajak</a>
+                    <a href="materi331.html">3.3. Bunga Tunggal</a>
+                    <a href="../kuis/kuis3/index.html">Kuis</a>
+                </div>
+                <a href="../evaluasi/index.html" class="peng">Evaluasi</a>
+            </div>
+        </div>
+    </div>
+
+    <!-- tampilan desktop -->
+    <nav class="bar_samping">
+        <center><a href="../index.html"><img src="../assets/img/ikon2.png"></a></center><br>
+        <hr>
+        <div class="listMateri">
+            <button class="dropdown-btn">1.PENJUALAN DAN PEMBELIAN
+                <img src="../assets/img/drop.png"></a>
+            </button>
+            <div class="dropdown-container">
+                <a href="materi100.html">Ayo Lihat!</a>
+                <a href="materi111.html">1.1. Nilai Produk</a>
+                <a href="materi121.html">1.2. Untung Rugi</a>
+                <a href="../kuis/kuis1/index.html">Kuis</a>
+            </div>
+            <button class="dropdown-btn">2. PERSENTASE UNTUNG RUGI DAN BOBOT PRODUK
+                <img src="../assets/img/drop.png"></a>
+            </button>
+            <div class="dropdown-container" style="display: block;">
+                <a href="materi200.html">Ayo Lihat!</a>
+                <a href="materi211.html" class="active">2.1. Persentase Untung dan Rugi</a>
+                <a href="materi221.html">2.2. Bobot Produk</a>
+                <a href="../kuis/kuis2/index.html">Kuis</a>
+            </div>
+            <button class="dropdown-btn"><a href="materi300.html">3. DISKON, PAJAK, DAN BUNGA TUNGGAL
+                <img src="../assets/img/drop.png"></a>
+            </button>
+            <div class="dropdown-container">
+                <a href="materi300.html">Ayo Lihat!</a>
+                <a href="materi311.html" class="">3.1. Diskon</a>
+                <a href="materi321.html">3.2. Pajak</a>
+                <a href="materi331.html">3.3. Bunga Tunggal</a>
+                <a href="../kuis/kuis3/index.html">Kuis</a>
+            </div>
+            <a href="../evaluasi/index.html" class="peng">Evaluasi</a>
+            
+        </div>
+    </nav>
+
+    <div class="isi">
+        <div class="jdl1">
+            <h4>MATEMATIKA</h4>
+            <h4>Aritmatika Sosial</h4>
+        </div>
+        <div class="jdl2">
+            <h5>2.1. Persentase Untung Rugi</h5>
+        </div>
+
+        <div class="isi2">
+            <div class="materinya">
+                <p><b>2.1.1. Persentase Untung</b></p>
+                <p class="prf">
+                    Untung adalah atau laba adalah selisih dari antara harga jual dan harga beli. Kondisi ini terjadi apabila harga beli (biaya yang dikeluarkan) lebih sedikit atau kurang dari harga jual (biaya yang diperoleh) yang umumnya terjadi dalam suatu proses jual beli. Persentase untung digunakan untuk mengetahui persentase keuntungan penjualan suatu produk terhadap modal yang dikeluarkan. Sebelum menghitung persentase keuntungan yang diperoleh, perhatikan kondisi dimana Harga Jual lebih dari Harga Beli. Persentase untung dapat dihitung dengan rumus berikut:
+                    <center><img src="../assets/img/rumus5.png" style="width:450px; height:150px;"></center>
+                </p>
+
+                <svg height="10" width="100%">
+                        <line x1="0" y1="0" x2="1000" y2="0" style="stroke:#FFD175;stroke-width:25" />
+                </svg>
+                
+                <div class="bg-nav">
+                    <div class="nav-top">
+                        <a href="#" class="top nav-top-active" id="btnki">Contoh 2.1.1</a>
+                        <a href="#" class="top" id="btnkd">Contoh 2.1.2</a>
+                    </div>
+                    <div class="nav-isi" id="ki">
+                        <h3>Contoh 2.1.1</h3>
+                        <div class="konten" style="height:350px;"><br>
+                            <center><img src="../assets/img/gambar09.jpg" style="width:180px; height:180px;"><br>Gambar 2.2. Kue Rangai (Sumber: Dokumen Pribadi)</center>
+                            <p class="prf">Harga beli 30 bungkus kue rangai adalah Rp525.00,00. Kue rangai tersebut dijual dengan harga Rp22.750 untuk setiap bungkusnya, hitunglah persentase keuntungannya apabila kue rangai tersebut terjual seluruhnya!</p><br>
+
+                            <center><h3>PENJELASAN</h3></center>
+                                <b style="color:blue;">Diketahui:</b><br>
+                                    <ul style="list-style-type:disc; padding: 10px 25px;">
+                                        <li>
+                                            Harga beli kue rangai adalah Rp525.000,00
+                                        </li>
+                                        <li>
+                                            Jumlah kue rangai adalah 30 Bungkus
+                                        </li>
+                                        <li>
+                                            Harga jual adalah Rp22.750,00
+                                        </li>
+                                    </ul>
+
+                                <br><b style="color:blue;">Ditanya:</b> <br>
+                                    <p class="prf">Berapa persentase keuntungan penjualan kue rangai?</p>
+                                <br>
+
+                                <b style="color:blue;">Jawab:</b> <br>
+
+                                <p>Harga jual = 30 bungkus × 22.750</p>
+                                \[ \hspace{2.1cm}=\]682.500<br><br>
+
+           
+                                <p>Untung = harga jual – harga beli</p>
+                                \[ \hspace{1.5cm}=\]682.500 – 525.000<br>
+                                \[ \hspace{1.5cm}=\]157.500<br><br>
+
+                                Persentase Untung =\[ \frac{untung}{harga\hspace{0.2cm}jual} \] × 100%<br>
+                                \[ \hspace{3.7cm}= \frac{157.500}{525.000}\] × 100%<br>
+                                \[ \hspace{3.7cm}=\] 30%<br>
+
+
+                                <br><p>Jadi, persentase keuntungan yang diperoleh apabila kue gapit terjual seluruhnya adalah 30%</p>
+                                <br><br>
+                        </div>
+                    </div>
+
+                    <div class="nav-isi hilang" id="kd">
+                        <h3>Contoh 2.1.2</h3><br>
+                        
+                        <div class="konten" style="height:350px;">
+                            <center><img src="../assets/img/gambar10.jpg" style="width:180px; height:180px;"><br>Gambar 2.3. Sasirangan (Sumber: Dokumen Pribadi)</center>
+                            <p class="prf">Kayla membeli kain sasirangan seharga Rp120.000,00 lalu dijahit menjadi sebuah baju dan empat lembar masker dengan biaya Rp110.000,00. Baju tersebut kemudian dijual dengan harga Rp227.500,00 dan masker dijual dengan harga Rp15.000,00 per lembar. Berapa keuntungan dan persentase keuntungan yang diperoleh Kayla?</p> <br>
+                        
+                            <center><h3>PENJELASAN</h3></center>
+                                <b style="color:blue;">Dikerahui:</b><br>
+                                <ul style="list-style-type:disc; padding: 10px 25px;">
+                                    <li>
+                                       Harga kain sasirangan adalah Rp120.000,00 
+                                    </li>
+                                    <li>
+                                        Biaya menjahit adalah Rp110.000,00
+                                    </li>
+                                    <li>
+                                        Harga Jual baju sasirangan adalah Rp277.500,00
+                                    </li>
+                                    <li>
+                                        Harga jual masker per lembar adalah Rp15.000,00
+                                    </li>
+                                    <li>
+                                        Bayak masker adalah 4 Lembar
+                                    </li>
+                                    <li>
+                                        Banyak baju sasirangan adalah 1 Lembar
+                                    </li>
+                                </ul>
+
+                                <br>
+                                <b style="color:blue;">Ditanya:</b> <br>
+                                <ul style="list-style-type:disc; padding: 10px 25px;">
+                                    <li>Berapa keuntungan dari penjualan keseluruhan?</li>
+                                    <li>Berapa persentase keuntungan?</li>
+                                </ul><br><br>
+
+                                <b style="color:blue;">Jawab:</b> <br>
+                                Modal   = Harga Kain Sasirangan + Biaya Menjahit<br/>
+                                \[ \hspace{1.3cm}= 120.000 + 110.000 \]<br/>
+                                \[ \hspace{1.3cm}= 230.000 \] <br/> <br>
+
+                                Harga Jual Masker = Banyak Masker × Harga Satuan Masker<br>
+                                \[ \hspace{3.7cm}= 4 × 15.000 \]<br>
+                                \[ \hspace{3.7cm}= 60.000 \]<br> <br>
+
+                                Harga Jual Keseluruhan = Harga Jual Baju + Harga Jual Masker seluruhnya<br>
+                                \[ \hspace{4.7cm}= 227.500 + 60.000 \]<br>
+                                \[ \hspace{4.7cm}= 287.500 \]<br> <br>
+
+
+                                <b>Keuntungan penjualan baju</b><br>
+                                \[ \hspace{0.2cm} Untung = Harga  \hspace{0.2cm} Jual – Modal \]<br>
+                                \[ \hspace{2.2cm}= 287.500 – 230.000 \]<br>
+                                \[ \hspace{2.2cm}= 57.500 \]<br><br>
+
+                                <b>Persentase keuntungan</b><br>
+                                \[ \hspace{0.2cm} Persentasi  \hspace{0.2cm} Untung = \frac{Untung}{Harga \hspace{0.2cm}Beli} × 100% \]<br>
+                                \[ \hspace{5cm} = \frac{57.500}{230.000} × 100% \]<br>
+                                \[ \hspace{5cm} = 25% \]
+                    
+                                <br><p class="prf">Jadi, keuntungan yang diperoleh Kayla setelah baju yang dijahit terjual adalah Rp57.500,00 dan persentase keuntungannya adalah 25%</p><br/>   
+                        </div>
+                    </div>
+                    </div>
+                </div>
+            </div>
+
+            <center>
+                <a href="materi200.html" class="nav_bawah">Sebelumnya</a>
+                <a href="materi211.html" class="nav_bawah navAktif">1</a>
+                <a href="materi212.html" class="nav_bawah ">2</a>
+                <a href="materi213.html" class="nav_bawah">3</a>
+                <a href="materi214.html" class="nav_bawah">4</a>
+                <a href="materi215.html" class="nav_bawah">5</a>
+                <a href="materi216.html" class="nav_bawah">6</a>
+                <a href="materi217.html" class="nav_bawah">7</a>
+                <a href="materi218.html" class="nav_bawah">8</a>
+                <a href="materi219.html" class="nav_bawah">9</a>
+                <a href="materi2110.html" class="nav_bawah">10</a>
+                <a href="materi2111.html" class="nav_bawah">11</a>
+                <a href="materi212.html" class="nav_bawah">Selanjutnya</a>
+            </center>
+        </div>
+    </div>
+
+    <script src="../assets/js/sidebar.js"></script>
+
+      <script>
+        let btnki = document.getElementById('btnki');
+        let btnkd = document.getElementById('btnkd');
+        let isiki = document.getElementById('ki');
+        let isikd = document.getElementById('kd');
+
+        btnki.addEventListener('click', function(){
+            console.log('tes1')
+            if(btnki.className.indexOf('nav-top-active') == -1){
+                btnki.classList.toggle('nav-top-active');
+                isiki.classList.toggle('hilang');
+
+                btnkd.classList.toggle('nav-top-active');
+                isikd.classList.toggle('hilang');
+            }
+        })
+
+        btnkd.addEventListener('click', function(){
+            console.log('tes2')
+            if(btnkd.className.indexOf('nav-top-active') == -1){
+                btnki.classList.toggle('nav-top-active');
+                isiki.classList.toggle('hilang');
+
+                btnkd.classList.toggle('nav-top-active');
+                isikd.classList.toggle('hilang');
+            }
+        })
+    </script>
+</body>

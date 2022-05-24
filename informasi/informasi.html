@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/png" href="../assets/img/logo2.png">
+    <title>INFORMASI | MEDIA PEMBELAJARAN</title>
+
+    <!-- style -->
+    <link rel="stylesheet" type="text/css" href="../assets/style/semua.css">
+    <link rel="stylesheet" type="text/css" href="../assets/style/awal.css">
+
+    
+</head>
+<body>
+    <header>
+        <h1>MATEMATIKA</h1>
+        <h2>JUDUL MEDIA PEMBELAJARAN</h2>
+    </header>
+
+    <div class="back">
+        <a href="../index.html">
+            <img src="../assets/img/home.png">
+        </a>
+    </div>
+        
+    <main>
+        <div class="bg-nav">
+            <div class="nav-top">
+                <a href="#" class="top nav-top-active" id="btnki">AUTHOR</a>
+                <a href="#" class="top" id="btnkd">PERIHAL</a>
+            </div>
+            <div class="nav-isi setengah" id="ki">
+                <table class="tabel1">
+                    <tr>
+                        <td>Nama</td>
+                        <td width="20"><center>:</center></td>
+                        <td>---</td>
+                    </tr>
+                    <tr>
+                        <td>Email</td>
+                        <td width="20"><center>:</center></td>
+                        <td>---</td>
+                    </tr>
+                    <tr>
+                        <td>Dosen Pembimbing 1</td>
+                        <td width="20"><center>:</center></td>
+                        <td>---</td>
+                    </tr>
+                    <tr>
+                        <td>Dosen Pembimbing 2</td>
+                        <td width="20"><center>:</center></td>
+                        <td>---</td>
+                    </tr>
+                    <tr>
+                        <td>Program Studi</td>
+                        <td width="20"><center>:</center></td>
+                        <td>---</td>
+                    </tr>
+                    <tr>
+                        <td>Fakultas</td>
+                        <td width="20"><center>:</center></td>
+                        <td>---</td>
+                    </tr>
+                    <tr>
+                        <td>Instansi</td>
+                        <td width="20"><center>:</center></td>
+                        <td>---</td>
+                    </tr>
+                </table>
+                <p style="color:white">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quaerat ullam nulla architecto aliquid obcaecati velit pariatur sunt nihil, quasi harum consectetur sed et aperiam quam?</p>
+            </div>
+            <div class="nav-isi hilang" id="kd">
+                <div>
+                    Media pembelajaran ini dibuat untuk memenuhi persyaratan dalam menyelesaikan Program Strata-1 Pendidikan Komputer dengan judul tugar akhir : "Pengembangan Media Pembelajaran Interaktif Berbasis Web pada Materi"
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <script>
+        let btnki = document.getElementById('btnki');
+        let btnkd = document.getElementById('btnkd');
+        let isiki = document.getElementById('ki');
+        let isikd = document.getElementById('kd');
+
+        btnki.addEventListener('click', function(){
+            console.log('tes1')
+            if(btnki.className.indexOf('nav-top-active') == -1){
+                btnki.classList.toggle('nav-top-active');
+                isiki.classList.toggle('hilang');
+
+                btnkd.classList.toggle('nav-top-active');
+                isikd.classList.toggle('hilang');
+            }
+        })
+
+        btnkd.addEventListener('click', function(){
+            console.log('tes2')
+            if(btnkd.className.indexOf('nav-top-active') == -1){
+                btnki.classList.toggle('nav-top-active');
+                isiki.classList.toggle('hilang');
+
+                btnkd.classList.toggle('nav-top-active');
+                isikd.classList.toggle('hilang');
+            }
+        })
+    </script>
+</body>
+</html>

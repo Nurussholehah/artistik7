@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/png" href="../assets/img/ikon.png">
+    <title>ARTISTIK</title>
+
+    <!-- matjax -->
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+    <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+
+    <!--bootstrap-->
+    <link rel="stylesheet" href="../assets/css/bootstrap.min.css">
+
+
+    <!-- style -->
+    <link rel="stylesheet" type="text/css" href="../assets/style/semua.css">
+    <link rel="stylesheet" type="text/css" href="../assets/style/materi.css">
+
+    
+</head>
+<body>
+    <!-- tampilan hp -->
+    <button class="btnSide" onclick="openSide()">
+        <img src="../assets/img/bar.png">
+    </button>
+    <div class="sideNav sideNavDisplay" id="sideNav">
+        <a href="javascript:void(0)" class="tutup" onclick="closeSide()">
+            <img src="../assets/img/close.png">
+        </a>
+        <div class="isinav">
+            <div class="listMateri">
+                <center><a href="../index.html"><img src="../assets/img/ikon2.png"></a></center><br>
+                <hr>
+                <button class="dropdown-btn">1.PENJUALAN DAN PEMBELIAN
+                <img src="../assets/img/drop.png"></a>
+                </button>
+                <div class="dropdown-container">
+                    <a href="materi100.html">Ayo Lihat!</a>
+                    <a href="materi111.html">1.1. Nilai Produk</a>
+                    <a href="materi121.html">1.2. Untung Rugi</a>
+                    <a href="../kuis/kuis1/index.html">Kuis</a>
+                </div>
+                 <button class="dropdown-btn">2. PERSENTASE UNTUNG RUGI DAN BOBOT PRODUK
+                    <img src="../assets/img/drop.png"></a>
+                </button>
+                <div class="dropdown-container">
+                    <a href="materi200.html">Ayo Lihat!</a>
+                    <a href="materi211.html">2.1. Persentase Untung dan Rugi</a>
+                    <a href="materi221.html">2.2. Bobot Produk</a>
+                    <a href="../kuis/kuis2/index.html">Kuis</a>
+                </div>
+                <button class="dropdown-btn">3. DISKON, PAJAK, DAN BUNGA TUNGGAL
+                    <img src="../assets/img/drop.png"></a>
+                </button>
+                <div class="dropdown-container" style="display: block;">
+                    <a href="materi300.html">Ayo Lihat!</a>
+                    <a href="materi311.html">3.1. Diskon</a>
+                    <a href="materi321.html" class="active">3.2. Pajak</a>
+                    <a href="materi331.html">3.3. Bunga Tunggal</a>
+                    <a href="../kuis/kuis3/index.html">Kuis</a>
+                </div>
+                <a href="../evaluasi/index.html" class="peng">Evaluasi</a>
+            </div>
+        </div>
+    </div>
+
+    <!-- tampilan desktop -->
+    <nav class="bar_samping">
+        <center><a href="../index.html"><img src="../assets/img/ikon2.png"></a></center><br>
+        <hr>
+        <div class="listMateri">
+            <button class="dropdown-btn">1.PENJUALAN DAN PEMBELIAN
+                <img src="../assets/img/drop.png"></a>
+            </button>
+            <div class="dropdown-container">
+                <a href="materi100.html">Ayo Lihat!</a>
+                <a href="materi111.html">1.1. Nilai Produk</a>
+                <a href="materi121.html">1.2. Untung Rugi</a>
+                <a href="../kuis/kuis1/index.html">Kuis</a>
+            </div>
+            <button class="dropdown-btn">2. PERSENTASE UNTUNG RUGI DAN BOBOT PRODUK
+                <img src="../assets/img/drop.png"></a>
+            </button>
+            <div class="dropdown-container">
+                <a href="materi200.html">Ayo Lihat!</a>
+                <a href="materi211.html">2.1. Persentase Untung dan Rugi</a>
+                <a href="materi221.html">2.2. Bobot Produk</a>
+                <a href="../kuis/kuis2/index.html">Kuis</a>
+            </div>
+            <button class="dropdown-btn">3. DISKON, PAJAK, DAN BUNGA TUNGGAL
+                <img src="../assets/img/drop.png"></a>
+            </button>
+            <div class="dropdown-container" style="display:block;">
+                <a href="materi300.html">Ayo Lihat!</a>
+                <a href="materi311.html">3.1. Diskon</a>
+                <a href="materi321.html" class="active">3.2. Pajak</a>
+                <a href="materi331.html">3.3. Bunga Tunggal</a>
+                <a href="../kuis/kuis3/index.html">Kuis</a>
+            </div>
+            <a href="../evaluasi/index.html" class="peng">Evaluasi</a>
+            
+        </div>
+    </nav>
+
+    <div class="isi">
+        <div class="jdl1">
+            <h4>MATEMATIKA</h4>
+            <h4>Aritmatika Sosial</h4>
+        </div>
+        <div class="jdl2">
+            <h5>3.2. Pajak</h5>
+        </div>
+
+        <div class="isi2">
+            <div class="materinya">
+                <center><img src="../assets/img/animasi2.jpg"><br>Sumber: i.pinning.com</center>
+
+                <p class="prf">
+                    Apabila sebelumnya kita telah mempelajari tentang diskon yang merupakan potongan nilai terhadap harga awal, maka pajak merupakan suatu nilai yang wajib dibayarkan masyarakat kepada lembaga pemerintah yang berwenag terhadap suatu barang atau jasa yang telah kita beli degan nominal tertentu. Besaran pajak diatur dalam undang-undang sesuai dengan jenis pajaknya. Ada berbagai pajak yang mungkin akan kita temukan dalam kehidupan sehari-hari. Misalnya Pajak Pertambahan Nilai (PPN), Pajak Usaha Mikro Kecil Menengah (UMKM), Pajak Penghasilan (PPh), Pajak Bumi dan Bangunan (PBB), dan lain-lain. Perhatikanlah penjelasan di bawah ini!
+                </p>
+
+                <b>a.  Pajak Pertambahan Nilai</b><br>
+                <p class="prf">
+                    Jenis pajak yang terkait dengan jual beli umumnyaa adalah Pajak Pertambahan Nilai (PPN). Pajak Pertambahan Nilai (PPN) merupakan pajak yang harus dibayarkan oleh pembeli kepada penjual atas konsumsi/pembelian barang atau jasa. Penjual tersebut mewakili pemerintah untuk menerima pembayaran pajak dari pembeli untuk disetorkan ke kas negara. Besar PPN adalah 10% dari harga jual.
+                </p>
+
+                <p class="prf">
+                    Berdasarkana penjelasan di atas, maka dapat menyimpulkan bahwa harga yang harus dibayar setelah pajak adalah harga semula ditambah besar pajak. Dimana, dapat dituliskan sebagai berikut:
+
+                    <center><img src="../assets/img/Rumus20.png" style="width:450px; height:150px;"></center>
+                </p>
+
+                <p class="prf">
+                    Besar pajak berupa persentase sehinga kita harus menghitungnya menggunakan rumus berikut:
+                    <center><img src="../assets/img/Rumus21.png" style="width:450px; height:150px;"></center>
+                </p>
+
+                <svg height="10" width="100%">
+                        <line x1="0" y1="0" x2="1000" y2="0" style="stroke:#FFD175;stroke-width:25" />
+                </svg>
+
+                <h5 class="tuju" style="color: black;">Contoh 3.2.1</h5>
+                <div class="konten" style="height:360px;"><br>
+                    <center><img src="../assets/img/gambar30.jpg" style="width:180px; height:180px;"><br>Gambar 3.7. Ikan Bakar<br>(Sumber: Dokumen Pribadi)</center>
+                    <p class="prf">
+                        Dea makan di Rumah Makan “Takurihing” dan memesan menu paket ikan bakar seharga Rp45.000,00. Selain itu ia menambah kue sebagai makanan  penutup seharga Rp25.000,00. Apabila saat membayar ke kasir, ia dikenakan pajak pertambahan nilai (PPN). Hitunglah harga yang harus dibayar Dea seluruhnnya!
+                    </p><br>
+
+                    <center><h5><b>PENJELASAN</b></h5></center>
+                        <b style="color:blue;">Diketahui:</b><br>
+                            <ul style="list-style-type:disc; padding: 10px 25px;">
+                                <li>
+                                    Harga paket ikan bakar yang dibeli Dea adalah Rp45.000,00
+                                </li>
+                                <li>
+                                    Harga kue yang dibeli Dea adalah Rp25.000,00
+                                </li>
+                                <li>
+                                    Besar PPN adalah 10%
+                                </li>
+                            </ul>
+
+                        <b style="color:blue;">Ditanya:</b> <br>
+                        <p class="prf">Berapa harga yang harus dibayar Dea seluruhnya setelah pajak?</p><br>
+
+                        <b style="color:blue;">Jawab:</b> <br><br>
+                        Total harga sebelum pajak = Harga paket ikan bakar + Harga Kue<br>
+                        \[ \hspace{4cm} = \] 45.000 + 25.000 <br>
+                        \[ \hspace{4cm} = \] 70.000 <br><br>
+
+
+                        Harga setelah pajak = Harga Semula + ( \[ \frac{Persentase \hspace{0.2cm} Pajak}{100} \] × Harga Semula )<br>
+                        \[ \hspace{4cm} = 70.000 + ( \frac{10}{100}\] × 70.000) <br>
+                        \[ \hspace{4cm} = \] 70.000 + 7.000 <br>
+                        \[ \hspace{4cm} = \] 77.000 <br><br>
+
+                        <br><p>Jadi, harga seluruhan yang harus dibayar Dea setelah pajak adalah Rp77.000,00</p><br><br>
+                </div>
+            </div>
+
+            <center>
+                <a href="materi316.html" class="nav_bawah">Sebelumnya</a>
+                <a href="materi321.html" class="nav_bawah navAktif">1</a>
+                <a href="materi322.html" class="nav_bawah">2</a>
+                <a href="materi323.html" class="nav_bawah">3</a>
+                <a href="materi324.html" class="nav_bawah">4</a>
+                <a href="materi325.html" class="nav_bawah">5</a>
+                <a href="materi322.html" class="nav_bawah">Selanjutnya</a>
+            </center>
+        </div>
+    </div>
+
+    <!-- JQuery -->
+    <script src="../assets/jquery-3.3.1.min.js"></script>
+    
+    <!-- Bootstrap -->
+    <script src="../assets/js/js/bootstrap.min.js"></script>
+
+
+    <script src="../assets/js/sidebar.js"></script>
+</body>

@@ -1,0 +1,102 @@
+[{
+    "soal0": {
+        "soal": "Jaki membeli 3 kg amplang dan 4 bungkus rimpi seharga Rp180.000,00. Apabila harga sebungkus rimpi adalah Rp15.000,00. Harga amplang per kilo adalah...",
+        "a": "Rp30.000,00",
+        "b": "Rp35.000,00",
+        "c": "Rp40.000,00",
+        "d": "Rp45.000,00",
+        "benar": "c",
+        "nih": "Rp40.000,00"
+    }
+}, {
+    "soal1": {
+        "soal": "Rizki membeli sekotak coklat berisi 12 batang dan sekaleng permen yang berisi 50 bungkus permen jeli ukuran tanggung dengan total harga pembelian adalah Rp171.000,00. Apabila diketahui harga setiap bungkus permen adalah Rp1.500,00. Berapa harga tiap batang coklat?",
+        "a": "Rp8.000,00",
+        "b": "Rp10.000,00",
+        "c": "Rp12.000,00",
+        "d": "Rp15.000,00",
+        "benar": "a",
+        "nih": "Rp8.000,00"
+    }
+
+}, {
+    "soal2": {
+        "soal": "Harga 10 bungkus mie instan adalah Rp27.000,00 dan 6 butir telur ayam ukuran besar seharga Rp10.800,00. Apabila Surya hanya ingin membeli 2 bungkus mie instan dan 1 telur, berapa uang yang harus dibayar Surya?",
+        "a": "Rp7.000,00",
+        "b": "Rp7.200,00",
+        "c": "Rp7.500,00",
+        "d": "Rp7.800,00",
+        "benar": "b",
+        "nih": "Rp7.200,00"
+    }
+}, {
+    "soal3": {
+        "soal": "Harga sekotak roti pisang adalah Rp15.000,00 dan harga sebotol teh adalah Rp4.000,00. Apabila Yulia membeli 6 kotak roti pisang dan 20 botol teh, uang yang harus dikeluarkan Yulia adalah . . . .",
+        "a": "Rp140.000,00",
+        "b": "Rp150.000,00",
+        "c": "Rp160.000,00",
+        "d": "Rp170.000,00",
+        "benar": "d",
+        "nih": "Rp170.000,00"
+    }
+}, {
+    "soal4": {
+        "soal": "Nanda membeli 30 botol sambal acan dengan 3 varian rasa yang berbeda. Sambal acan tersebut akan dijual kembali. Sebanyak 12 botol sambal acan mangga dijual seharga Rp12.500,00 perbotol, 10 botol sambal acan limau kuit dijual seharga Rp15.000,00 per botol, dan sambal acan binjai djual dengan harga Rp18.000,00 perbotolnya. Setelah semua laku terjual, Nanda memperoleh keuntungan sebesar Rp.180.000,00. Tentukan modal Nanda untuk membeli semua sambal acan!",
+        "a": "Rp254.000,00",
+        "b": "Rp258.000,00",
+        "c": "Rp264.000,00",
+        "d": "Rp268.000,00",
+        "benar": "c",
+        "nih": "Rp264.000,00"
+    }
+}, {
+    "soal5": {
+        "soal": "Toko aksesoris ‘Galuh’ menjual 4 gelang batu dengan harga Rp30.000,00 untuk setiap gelang, 6 kalung kecubung dengan harga Rp75.000,00 untuk setiap kalungnya, dan 12 bros mutiara dengan harga Rp25.000,00 untuk setiap bros. Hitunglah modalnya jika toko aksesoris ‘Galuh’ memperoleh keuntungan sebanyak Rp149.000,00!",
+        "a": "Rp254.000,00",
+        "b": "Rp258.000,00",
+        "c": "Rp264.000,00",
+        "d": "Rp268.000,00",
+        "benar": "c",
+        "nih": "Rp264.000,00"
+    }
+}, {
+    "soal6": {
+        "soal": "Kantin ‘Bungas’ membeli 6 dus minuman kaleng dengan harga Rp20.000,00 untuk setiap dusnya. Setiap dus berisi 6 kaleng. Apabila minuman kaleng tersebut dijual kembali dengan harga Rp4.000 perbuah. Berapa besar keuntungan kantin tersebut?",
+        "a": "Rp24.000,00",
+        "b": "Rp25.000,00",
+        "c": "Rp26.000,00",
+        "d": "Rp27.000,00",
+        "benar": "a",
+        "nih": "Rp24.000,00"
+    }
+}, {
+    "soal7": {
+        "soal": "Ani membuat ‘Kue Untuk’ dengan 4 macam isian sebanyak masing-masing 25 buah dengan modal Rp80.000,00. Lalu dijual kembali dengan harga Rp1.000,00 untuk setiap buah, hitunglah keuntungan yang diperoleh Ani apabila ‘Kue Untuk’ terjual semua!",
+        "a": "Rp35.000,00",
+        "b": "Rp30.000,00",
+        "c": "Rp25.000,00",
+        "d": "Rp20.000,00",
+        "benar": "d",
+        "nih": "Rp20.000,00"
+    }
+}, {
+    "soal8": {
+        "soal": "Mika membeli setengah lusin botol minum seharga Rp35.000,00 untuk setiap botolnya. Botol tersebut akan dijual kembali dengan harga Rp40.000,00 per buah. Namun saat diperiksa 2 botol bocor dan tidak dapat dijual. Kerugian yang dialami Mika adalah . . . .",
+        "a": "Rp40.000,00",
+        "b": "Rp50.000,00",
+        "c": "Rp60.000,00",
+        "d": "Rp70.000,00",
+        "benar": "b",
+        "nih": "Rp50.000,00"
+    }
+}, {
+    "soal9": {
+        "soal": "Pak Maki membeli sekeranjang mangga yang berisi 60kg seharga Rp750.000,00. Mangga yang dipesan terlambat sampai karena cuaca buruk, sehingga 20kg busuk dijalan. Jika Pak Maki menjual Rp13.000,00 perkilo mangga yang tersisa, hitunglah kerugian Pak Maki!",
+        "a": "Rp230.000,00",
+        "b": "Rp240.000,00",
+        "c": "Rp250.000,00",
+        "d": "Rp260.000,00",
+        "benar": "a",
+        "nih": "Rp230.000,00"
+    }
+}]

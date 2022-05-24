@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/png" href="../assets/img/ikon.png">
+    <title>ARTISTIK</title>
+
+    <!--bootstrap-->
+    <link rel="stylesheet" href="../assets/css/bootstrap.min.css">
+
+
+    <!-- matjax -->
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+    <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+
+
+    <!-- style -->
+    <link rel="stylesheet" type="text/css" href="../assets/style/semua.css">
+    <link rel="stylesheet" type="text/css" href="../assets/style/materi.css">    
+</head>
+<body>
+    <!-- tampilan hp -->
+    <button class="btnSide" onclick="openSide()">
+        <img src="../assets/img/bar.png">
+    </button>
+    <div class="sideNav sideNavDisplay" id="sideNav">
+        <a href="javascript:void(0)" class="tutup" onclick="closeSide()">
+            <img src="../assets/img/close.png">
+        </a>
+        <div class="isinav">
+            <div class="listMateri">
+                <center><a href="../index.html"><img src="../assets/img/ikon2.png"></a></center><br>
+                <hr>
+                <button class="dropdown-btn">1.PENJUALAN DAN PEMBELIAN
+                <img src="../assets/img/drop.png"></a>
+                </button>
+                <div class="dropdown-container" style="display: block;">
+                    <a href="materi100.html">Ayo Lihat!</a>
+                    <a href="materi111.html" class="active">1.1. Nilai Produk</a>
+                    <a href="materi121.html">1.2. Untung Rugi</a>
+                    <a href="../kuis/kuis1/index.html">Kuis</a>
+                </div>
+                 <button class="dropdown-btn">2. PERSENTASE UNTUNG RUGI DAN BOBOT PRODUK
+                    <img src="../assets/img/drop.png">
+                </button>
+                <div class="dropdown-container">
+                    <a href="materi200.html">Ayo Lihat!</a>
+                    <a href="materi211.html" class="">2.1. Persentase Untung dan Rugi</a>
+                    <a href="materi221.html">2.2. Bobot Produk</a>
+                    <a href="../kuis/kuis2/index.html">Kuis</a>
+                </div>
+                <button class="dropdown-btn">3. DISKON, PAJAK, DAN BUNGA TUNGGAL
+                    <img src="../assets/img/drop.png">
+                </button>
+                <div class="dropdown-container">
+                    <a href="materi300.html">Ayo Lihat!</a>
+                    <a href="materi311.html" class="">3.1. Diskon</a>
+                    <a href="materi321.html">3.2. Pajak</a>
+                    <a href="materi331.html">3.3. Bunga Tunggal</a>
+                    <a href="../kuis/kuis3/index.html">Kuis</a>
+                </div>
+                <a href="../evaluasi/index.html" class="peng">Evaluasi</a>
+            </div>
+        </div>
+    </div>
+
+    <!-- tampilan desktop -->
+    <nav class="bar_samping">
+        <center><a href="../index.html"><img src="../assets/img/ikon2.png"></a></center><br>
+        <hr>
+        <div class="listMateri">
+            <button class="dropdown-btn">1.PENJUALAN DAN PEMBELIAN
+                <img src="../assets/img/drop.png"></a>
+            </button>
+            <div class="dropdown-container" style="display: block;">
+                <a href="materi100.html">Ayo Lihat!</a>
+                <a href="materi111.html" class="active">1.1. Nilai Produk</a>
+                <a href="materi121.html">1.2. Untung Rugi</a>
+                <a href="../kuis/kuis1/index.html">Kuis</a>
+            </div>
+            <button class="dropdown-btn">2. PERSENTASE UNTUNG RUGI DAN BOBOT PRODUK
+                <img src="../assets/img/drop.png">
+            </button>
+            <div class="dropdown-container">
+                <a href="materi100.html">Ayo Lihat!</a>
+                <a href="materi211.html" class="">2.1. Persentase Untung dan Rugi</a>
+                <a href="materi221.html">2.2. Bobot Produk</a>
+                <a href="../kuis/kuis2/index.html">Kuis</a>
+            </div>
+            <button class="dropdown-btn">3. DISKON, PAJAK, DAN BUNGA TUNGGAL
+                <img src="../assets/img/drop.png">
+            </button>
+            <div class="dropdown-container">
+                <a href="materi100.html">Ayo Lihat!</a>
+                <a href="materi311.html" class="">3.1. Diskon</a>
+                <a href="materi321.html">3.2. Pajak</a>
+                <a href="materi331.html">3.3. Bunga Tunggal</a>
+                <a href="../kuis/kuis3/index.html">Kuis</a>
+            </div>
+            <a href="../evaluasi/index.html" class="peng">Evaluasi</a>
+            
+        </div>
+    </nav>
+
+    <div class="isi">
+        <div class="jdl1">
+            <h3>MATEMATIKA</h3>
+            <h3>Aritmatika Sosial</h3>
+        </div>
+        <div class="jdl2">
+            <h4> 1. Penjualan dan Pembelian</h4>
+        </div>
+
+        <div class="isi2">
+            <div class="materinya">
+               <div class="bg-nav">
+            <div class="nav-top">
+                <a href="#" class="top nav-top-active" id="btnki">Contoh 1.1.1</a>
+                <a href="#" class="top" id="btnkd">Contoh 1.1.2</a>
+            </div>
+            <div class="nav-isi" id="ki">
+                <h3>Contoh 1.1.1</h3>
+                <div class="konten">
+                    <br>
+                        <p class="prf">Ibu pergi ke pasar untuk membeli buah-buahan berikut:</p><br>
+                        <center><p>Tabel 1.1. Tabel Buah-Buahan</p></center>
+                        <table style="width:100%">
+                            <tr  style="text-align:center">
+                                <th>Nama Buah</th>
+                                <th>Banyak Buah</th>
+                                <th>Harga Buah Per Kg</th>
+                            </tr>
+                            
+                            <tr  style="text-align:center">
+                                <td>Buah Semangka</td>
+                                <td>20 Kg</td>
+                                <td>Rp5.000,00</td>
+                            </tr>
+                            
+                            <tr  style="text-align:center">
+                                <td>Buah Mangga</td>
+                                <td>10 Kg</td>
+                                <td>Rp25.000,00</td>
+                            </tr>
+
+                            <tr  style="text-align:center">
+                                <td>Buah Jeruk</td>
+                                <td>15 Kg</td>
+                                <td>Rp28.000,00</td>
+                            </tr>
+                        </table>
+                        <p class="prf">Hitunglah nilai keseluruhan untuk setiap buah-buahan!</p><br>
+                </div>
+
+                <center><h3>PENJELASAN</h3></center>
+                <b style="color:blue;">Diketahui:</b><br>
+                    <ul style="list-style-type:disc; padding: 10px 25px;">
+                        <li>
+                            Banyak Buah Semangka yang dibeli adalah 20 Kg
+                        </li>
+                        <li>
+                            Banyak Buah Mangga yang dibeli adalah 10 Biji
+                        </li>
+                        <li>
+                            Banyak Buah Jeruk yang dibeli adalah 15 Biji
+                        </li>
+                        <li>
+                            Harga Buah Semangka per Kg adalah Rp5.000,00
+                        </li>
+                        <li>
+                            Harga Buah Mangga per Kg adalah Rp25.000,00
+                        </li>
+                        <li>
+                            Harga Buah Jeruk per Kg adalah Rp28.000,00
+                        </li>
+                    </ul>
+
+                <br><b style="color:blue;">Ditanya:</b> <br>Berapa Nilai Keseluruhan untuk setiap buah-buahan?<br>
+                
+                <br><b style="color:blue;">Jawab:</b> <br>
+                    <p>Harga Keseluruhan Semangka = Banyak Semangka × Harga Semangka Per Kg</p>
+                    \[ \hspace{5.9cm}= 20 + 5.000 \] <br/>
+                    \[ \hspace{5.9cm}= 100.000 \]<br/>
+
+                    <p>Harga Keseluruhan Mangga = Banyak Mangga × Harga Mangga Per Kg</p>
+                    \[ \hspace{5.5cm}= 10 + 25.000 \] <br/>
+                    \[ \hspace{5.5cm}= 250.000 \]<br/>
+
+                    <p>Buah Jeruk</p>
+                    <p>Harga Keseluruhan Jeruk = Banyak Jeruk × Nilai Jeruk Per Kg</p>
+                    \[ \hspace{4.9cm}= 15 × 28.000 \]<br/>
+                    \[ \hspace{4.9cm}= 420.000 \]<br/>
+
+                    <br><p>Jadi, Harga keseluruhan buah semangka adalah Rp100.000,00, buah mangga Rp250.000,00 dan buah Jeruk Rp420.000,00.</p>
+                    <br><br>
+            </div>
+
+            <div class="nav-isi hilang" id="kd">
+                <h3>Contoh 1.1.2</h3>
+                <br>
+                <div class="konten" style="height:  320px;">
+                    <center><img src="../assets/img/gambar02.jpg" style="width:180px; height:180px;"><br>Gambar 1.2. Wajik Kandangan (Sumber: Dokumen Pribadi)</center>
+
+                    <p class="prf">Harga sekotak dodol kandangan yang berisi 30 bungkus adalah Rp156.000,00. sedangkan, wajik yang berisi 15 bungkus seharga Rp105.000,00. Berapa nilai untuk setiap bungkus dodol dan wajik?</p>
+                </div>
+
+                <center><h3>PENJELASAN</h3></center>
+                <b style="color:blue;">Dikerahui:</b><br>
+                <ul style="list-style-type:disc; padding: 10px 25px;">
+                    <li>
+                       Harga Dodol adalah Rp156.000,00 
+                    </li>
+                    <li>
+                        Harga Wajik adalah Rp105.000,00
+                    </li>
+                    <li>
+                        Banyak Dodol adalah 30 Bungkus
+                    </li>
+                    <li>
+                        Banyak Wajik adalah 15 Bungkus
+                    </li>
+                </ul>
+
+                <br><b style="color:blue;">Ditanya:</b> <br>Berapa nilai untuk setiap bungkus dodol dan wajik?<br>
+
+                <br><b style="color:blue;">Jawab:</b> <br>
+                
+                Nilai Keseluruhan = Banyak Unit × Nilai Satuan<br/>
+                \[ \hspace{3.6cm}= 30 × 12.000\]<br/>
+                \[ \hspace{3.6cm}= 36.000\] <br/>
+    
+                <br><p>Jadi, nilai keseluruhan dodol adalah Rp36.000,00</p><br/>   
+            </div>
+        </div>
+    </div>
+
+            <center>
+                <a href="materi111.html" class="nav_bawah">Sebelumnya</a>
+                <a href="materi111.html" class="nav_bawah">1</a>
+                <a href="materi112.html" class="nav_bawah navAktif">2</a>
+                <a href="materi113.html" class="nav_bawah">3</a>
+                <a href="materi114.html" class="nav_bawah">4</a>
+                <a href="materi113.html" class="nav_bawah">Selanjutnya</a>
+            </center>
+        </div>
+    </div>
+
+    <script src="../assets/js/sidebar.js"></script>
+
+      <script>
+        let btnki = document.getElementById('btnki');
+        let btnkd = document.getElementById('btnkd');
+        let isiki = document.getElementById('ki');
+        let isikd = document.getElementById('kd');
+
+        btnki.addEventListener('click', function(){
+            console.log('tes1')
+            if(btnki.className.indexOf('nav-top-active') == -1){
+                btnki.classList.toggle('nav-top-active');
+                isiki.classList.toggle('hilang');
+
+                btnkd.classList.toggle('nav-top-active');
+                isikd.classList.toggle('hilang');
+            }
+        })
+
+        btnkd.addEventListener('click', function(){
+            console.log('tes2')
+            if(btnkd.className.indexOf('nav-top-active') == -1){
+                btnki.classList.toggle('nav-top-active');
+                isiki.classList.toggle('hilang');
+
+                btnkd.classList.toggle('nav-top-active');
+                isikd.classList.toggle('hilang');
+            }
+        })
+    </script>
+</body>

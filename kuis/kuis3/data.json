@@ -1,0 +1,102 @@
+[{
+    "soal0": {
+        "soal": "Dita membeli tas seharga Rp400.000 namun, saat akan membayar Dita mendapatkan diskon sehingga hanya membayar Rp360.000,00. Berapa persentase diskon yang diperoleh Dita?",
+        "a": "10%",
+        "b": "12%",
+        "c": "15%",
+        "d": "20%",
+        "benar": "a",
+        "nih": "10%"
+    }
+}, {
+    "soal1": {
+        "soal": "Lisa membeli celana seharga Rp180.000,00. Saat membayar ia mendapatkan diskon sehingga hanya membayar Rp144.000,00. Berapa persentase diskon yang diterima Lisa?",
+        "a": "10%",
+        "b": "12%",
+        "c": "15%",
+        "d": "20%",
+        "benar": "d",
+        "nih": "20%"
+    }
+
+}, {
+    "soal2": {
+        "soal": "Bu Egi membeli buku bacaan seharga Rp18.000 setelah mendapat diskon sebesar 10%. Berapa harga buku sebelum diskon?",
+        "a": "Rp28.000,00",
+        "b": "Rp25.000,00",
+        "c": "Rp23.000,00",
+        "d": "Rp20.000,00",
+        "benar": "d",
+        "nih": "Rp20.000,00"
+    }
+}, {
+    "soal3": {
+        "soal": "Rani membeli jam tangan seharga Rp176.250,00 setelah mendapatkan diskon sebesar 25%. Berapa harga jam tangan sebelum diskon?",
+        "a": "Rp415.000,00",
+        "b": "Rp345.000,00",
+        "c": "Rp235.000,00",
+        "d": "Rp195.000,00",
+        "benar": "c",
+        "nih": "Rp235.000,00"
+    }
+}, {
+    "soal4": {
+        "soal": "Sela membeli tas seharga Rp325.000,00 dan mendpatkan voucher diskon sebesar 15%. Berapa harga yang harus dibayarkan, apabila saat membayar ke kasir ia dikenakan Pajak Pertambahan Nilai (PPN)?",
+        "a": "Rp305.875,00",
+        "b": "Rp303.875,00",
+        "c": "Rp205.875,00",
+        "d": "Rp203.875,00",
+        "benar": "b",
+        "nih": "Rp303.875,00"
+    }
+}, {
+    "soal5": {
+        "soal": "Dyah membeli sebuah jaket dengan harga Rp180.000,00 dan mendapatkan diskon sebanyak 20%, berapa uang yang harus dibayar Dyah setelah mendapat diskon dan dikenakan Pajak Pertambahan Nilai (PPN)?",
+        "a": "Rp158.400,00",
+        "b": "Rp168.400,00",
+        "c": "Rp158.800,00",
+        "d": "Rp168.800,00",
+        "benar": "a",
+        "nih": "Rp158.400,00"
+    }
+}, {
+    "soal6": {
+        "soal": "Acil Imay menjual bubur ayam dengan rata-rata penjualan hariannya 150 porsi. Apabila harga jual untuk setiap porsi mie ayam adalah Rp10.000,00. Berapa penghasilan bulanan Acil Imay apabila omzet yang dimiliki beliau dikurangi dengan pajak UMKM selama satu bulan?",
+        "a": "Rp40.440.000,00",
+        "b": "Rp44.550.000,00",
+        "c": "Rp50.440.000,00",
+        "d": "Rp50.550.000,00",
+        "benar": "b",
+        "nih": "Rp44.550.000,00"
+    }
+}, {
+    "soal7": {
+        "soal": "Cak Joyo menjual nasi goreng dengan rata-rata penjualan hariannya 400 porsi. Apabila harga jual untuk setiap porsi nasi goreng adalah Rp12.000,00. Berapa pajak UMKM Cak Joyo selama satu bulan?",
+        "a": "Rp1.220.000,00",
+        "b": "Rp1.330.000,00",
+        "c": "Rp1.440.000,00",
+        "d": "Rp1.550.000,00",
+        "benar": "c",
+        "nih": "Rp1.440.000,00"
+    }
+}, {
+    "soal8": {
+        "soal": "Tentukanlah besar bunga tunggal yang diterima Ibu Rahmi, jika ia menabung uangnya sebesar Rp20.000.000,00 selama 5 tahun, apabila bunga tunggal yang diberikan bank sebesar 4% setahun!",
+        "a": "Rp4.750.000,00",
+        "b": "Rp4.500.000,00",
+        "c": "Rp4.250.000,00",
+        "d": "Rp4.000.000,00",
+        "benar": "d",
+        "nih": "Rp4.000.000,00"
+    }
+}, {
+    "soal9": {
+        "soal": "Tentukanlah besar bunga tunggal yang diterima Putra, jika ia menabung uangnya sebesar Rp15.000.000,00 selama 3 tahun, apabila bunga tunggal yang diberikan bank sebesar 2% setahun!",
+        "a": "Rp800.000,00",
+        "b": "Rp850.000,00",
+        "c": "Rp900.000,00",
+        "d": "Rp950.000,00",
+        "benar": "c",
+        "nih": "Rp900.000,00"
+    }
+}]

@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta http-equiv="Content-Type" content="Text/html" charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/png" href="../../assets/img/ikon.png">
+    <title>Halaman Guru | ARTISTIK</title>
+
+    <!--bootstrap-->
+    <link rel="stylesheet" href="../assets/css/bootstrap.min.css">
+
+
+    <!-- style -->
+    <link rel="stylesheet" type="text/css" href="../assets/style/semua.css">
+    <link rel="stylesheet" type="text/css" href="../assets/style/tes.css">
+    <link rel="stylesheet" type="text/css" href="../assets/style/tesHP.css">
+    <link rel="stylesheet" type="text/css" href="../assets/style/semua.css">
+    <link rel="stylesheet" type="text/css" href="../assets/style/materi.css">    
+
+
+    <!-- prompt -->
+    <link rel="stylesheet" href="../../assets/style/popupmodal.css">
+
+    <!-- matjax -->
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+    <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>  
+</head>
+
+<body>
+    <!-- tampilan hp -->
+    <button class="btnSide" onclick="openSide()">
+        <img src="../assets/img/bar.png">
+    </button>
+    <div class="sideNav sideNavDisplay" id="sideNav">
+        <a href="javascript:void(0)" class="tutup" onclick="closeSide()">
+            <img src="../assets/img/close.png">
+        </a>
+        <div class="isinav">
+            <div class="listMateri">
+                <center><a href="../index.html"><img src="../assets/img/ikon2.png"></a></center><br>
+                <hr>
+                <a href="HalamanGuru.html" class="active">Hasil Kuis 1</a><br>
+                <a href="HasilKuis2.html">Hasil Kuis 2</a><br>
+                <a href="HasilKuis3.html">Hasil Kuis 3</a><br>
+                <a href="HasilEvaluasi">Hasil Evaluasi</a><br>
+            </div>
+        </div>
+    </div>
+
+    <!-- tampilan desktop -->
+    <nav class="bar_samping">
+        <center><a href="../index.html"><img src="../assets/img/ikon.png"></a></center><br>
+        <hr>
+        <div class="listMateri">
+            <a href="HalamanGuru.html" class="active">Hasil Kuis 1</a><br>
+            <a href="HasilKuis2.html">Hasil Kuis 2</a><br>
+            <a href="HasilKuis3.html">Hasil Kuis 3</a><br>
+            <a href="HasilEvaluasi">Hasil Evaluasi</a><br>
+        </div>
+    </nav>
+
+    <div class="isi">
+        <div class="jdl1">
+            <h3>Aritmatika Sosial</h3>
+        </div>
+
+        <div class="isi2 hasilnya">
+            <div class="card-header">
+                <div class="" style="font-family: 'Quicksand'; font-size: 24; text-align: center; color:black">DAFTAR NILAI KUIS 1</div>                                       
+            </div>
+           
+            <div class="card-body">
+                <div class="table-responsive">
+                    <table class="table table-bordered" style="font-size: 15px;">
+                        <thead>
+                            <tr>
+                            <th style="vertical-align: middle; text-align:center">No.</th>
+                            <th style="vertical-align: middle; text-align:center">Nama</th>
+                            <th style="vertical-align: middle; text-align:center">Kelas</th>
+                            <th style="vertical-align: middle; text-align:center">Nilai</th>
+                            <th style="vertical-align: middle; text-align:center">Keterangan</th>
+                            </tr>
+                        </thead>
+                        <tbody class="resultContainer">
+
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+    </div>
+
+    <script src="../../assets/js/polyfill.js"></script>
+    <script src="../../assets/js/popupmodal-min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js" integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+    <script src="https://www.gstatic.com/firebasejs/8.2.1/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.2.1/firebase-analytics.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.2.1/firebase-database.js"></script>
+                  
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+
+    <script>      
+    var firebaseConfig = {
+        apiKey: "AIzaSyCsbsZGJr7zA_oVP4ZCm48Z5CtTuq1_x-c",
+        authDomain: "yulia-pglobal.firebaseapp.com",
+        projectId: "yulia-pglobal",
+        storageBucket: "yulia-pglobal.appspot.com",
+        messagingSenderId: "1004262270087",
+        appId: "1:1004262270087:web:fc0cdd17392f77cf454422",
+        measurementId: "G-B7WR4RDFRS"
+      };
+
+    // Initialize Firebase
+    firebase.initializeApp(firebaseConfig);
+
+
+    var database = firebase.database();
+    database = firebase.database();
+
+        var ref = database.ref("kuis1");
+        var idx = 0;
+
+        let rc = document.querySelector('.resultContainer');
+
+        ref.on("child_added", function (data) {
+            idx += 1;
+
+            var vl = data.val();
+            rc.innerHTML +=
+                `<tr>
+                    <td class="tdX" style="text-align: center">${idx}</td>
+                    <td class="tdX">${vl.nama}</td>
+                    <td class="tdX" style="text-align: center">${vl.kelas}</td>
+                    <td class="tdX" style="text-align: center">${vl.nilai}</td>
+                    <td class="tdX" style="text-align: center">${vl.keterangan}</td></tr>`;
+
+
+        })
+
+
+    var x = window.matchMedia("(max-width: 700px)")
+    myFunction(x) // Call listener function at run time
+    x.addListener(myFunction) // Attach listener function on state changes
+
+    function openSidebar() {
+        document.getElementById("sidebar").style.width = "250px";
+        document.getElementById("sidebar").style.overflow = "hidden";
+        document.getElementById("sidebar").style.marginLeft = "0";  
+        document.getElementById("konten").style.marginLeft = "270px";
+    }
+
+    function closeSidebar() {
+        document.getElementById("sidebar").style.width = "0";
+        document.getElementById("sidebar").style.marginLeft = "0";
+        document.getElementById("konten").style.marginLeft = "1rem";
+
+    }
+
+
+</script>
+
+    <!-- JQuery -->
+    <script src="../assets/jquery-3.3.1.min.js"></script>
+    
+    <!-- Bootstrap -->
+    <script src="../assets/js/js/bootstrap.min.js"></script>
+
+
+    <script src="../assets/js/sidebar.js"></script>
+</body>

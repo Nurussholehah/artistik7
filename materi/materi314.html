@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/png" href="../assets/img/ikon.png">
+    <title>ARTISTIK</title>
+
+    <!--bootstrap-->
+    <link rel="stylesheet" href="../assets/css/bootstrap.min.css">
+
+    <!-- matjax -->
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+    <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+
+
+    <!-- style -->
+    <link rel="stylesheet" type="text/css" href="../assets/style/semua.css">
+    <link rel="stylesheet" type="text/css" href="../assets/style/materi.css">    
+</head>
+
+<body>
+    <!-- tampilan hp -->
+    <button class="btnSide" onclick="openSide()">
+        <img src="../assets/img/bar.png">
+    </button>
+    <div class="sideNav sideNavDisplay" id="sideNav">
+        <a href="javascript:void(0)" class="tutup" onclick="closeSide()">
+            <img src="../assets/img/close.png">
+        </a>
+        <div class="isinav">
+            <div class="listMateri">
+                <center><a href="../index.html"><img src="../assets/img/ikon2.png"></a></center><br>
+                <hr>
+                <button class="dropdown-btn">1.PENJUALAN DAN PEMBELIAN
+                <img src="../assets/img/drop.png"></a>
+                </button>
+                <div class="dropdown-container">
+                    <a href="materi100.html">Ayo Lihat!</a>
+                    <a href="materi111.html">1.1. Nilai Produk</a>
+                    <a href="materi121.html">1.2. Untung Rugi</a>
+                    <a href="../kuis/kuis1/index.html">Kuis</a>
+                </div>
+                 <button class="dropdown-btn">2. PERSENTASE UNTUNG RUGI DAN BOBOT PRODUK
+                    <img src="../assets/img/drop.png"></a>
+                </button>
+                <div class="dropdown-container">
+                    <a href="materi200.html">Ayo Lihat!</a>
+                    <a href="materi211.html">2.1. Persentase Untung dan Rugi</a>
+                    <a href="materi221.html">2.2. Bobot Produk</a>
+                    <a href="../kuis/kuis2/index.html">Kuis</a>
+                </div>
+                <button class="dropdown-btn">3. DISKON, PAJAK, DAN BUNGA TUNGGAL
+                    <img src="../assets/img/drop.png"></a>
+                </button>
+                <div class="dropdown-container" style="display: block;">
+                    <a href="materi300.html">Ayo Lihat!</a>
+                    <a href="materi311.html" class="active">3.1. Diskon</a>
+                    <a href="materi321.html">3.2. Pajak</a>
+                    <a href="materi331.html">3.3. Bunga Tunggal</a>
+                    <a href="../kuis/kuis3/index.html">Kuis</a>
+                </div>
+                <a href="../evaluasi/index.html" class="peng">Evaluasi</a>
+            </div>
+        </div>
+    </div>
+
+    <!-- tampilan desktop -->
+    <nav class="bar_samping">
+        <center><a href="../index.html"><img src="../assets/img/ikon2.png"></a></center><br>
+        <hr>
+        <div class="listMateri">
+            <button class="dropdown-btn">1.PENJUALAN DAN PEMBELIAN
+                <img src="../assets/img/drop.png"></a>
+            </button>
+            <div class="dropdown-container">
+                <a href="materi100.html">Ayo Lihat!</a>
+                <a href="materi111.html">1.1. Nilai Produk</a>
+                <a href="materi121.html">1.2. Untung Rugi</a>
+                <a href="../kuis/kuis1/index.html">Kuis</a>
+            </div>
+            <button class="dropdown-btn">2. PERSENTASE UNTUNG RUGI DAN BOBOT PRODUK
+                <img src="../assets/img/drop.png"></a>
+            </button>
+            <div class="dropdown-container">
+                <a href="materi200.html">Ayo Lihat!</a>
+                <a href="materi211.html">2.1. Persentase Untung dan Rugi</a>
+                <a href="materi221.html">2.2. Bobot Produk</a>
+                <a href="../kuis/kuis2/index.html">Kuis</a>
+            </div>
+            <button class="dropdown-btn"><a href="materi300.html">3. DISKON, PAJAK, DAN BUNGA TUNGGAL
+                <img src="../assets/img/drop.png"></a>
+            </button>
+            <div class="dropdown-container" style="display: block;">
+                <a href="materi300.html">Ayo Lihat!</a>
+                <a href="materi311.html" class="active">3.1. Diskon</a>
+                <a href="materi321.html">3.2. Pajak</a>
+                <a href="materi331.html">3.3. Bunga Tunggal</a>
+                <a href="../kuis/kuis3/index.html">Kuis</a>
+            </div>
+            <a href="../evaluasi/index.html" class="peng">Evaluasi</a>
+            
+        </div>
+    </nav>
+
+    <div class="isi">
+        <div class="jdl1">
+            <h4>MATEMATIKA</h4>
+            <h4>Aritmatika Sosial</h4>
+        </div>
+        <div class="jdl2">
+            <h5>3.1. Diskon</h4>
+        </div>
+
+        <div class="isi2">
+            <div class="materinya">
+                <p class="prf">
+                    Setelah memahami semua contoh sebelumnya, maka diharapkan sudah mampu untuk mehami penggunaan rumus untuk menentukan harga setelah mendapatkan potongan diskon, juga menerapkannya dalam soal serupa. Selain memahami konsep harga yang harus dibayar setelah dikurangi diskon, kita akan memahami rumus yang akan digunakan untuk mencari persentase diskon yang diberikan melalui rumus berikut:
+                            
+                    <center><img src="../assets/img/Rumus18.png"  style="width:450px; height:150px;"></center>
+                </p>
+
+                <p class="prf">
+                    Selain itu, kita akan mempelajari rumus untuk menghitung harga semula dari suatu produk yanag telah mendapat diskon dengan rumus di bawah ini:
+
+                    <center><img src="../assets/img/Rumus19.png" style="width:450px; height:150px;"></center>
+                </p>
+
+                <svg height="10" width="100%">
+                        <line x1="0" y1="0" x2="1000" y2="0" style="stroke:#FFD175;stroke-width:25" />
+                </svg>
+
+                <p class="prf">Perhatikan contoh soal di bawah ini untuk memahami penggunaan rumus di atas!</p><br>
+
+                <div class="bg-nav">
+                    <div class="nav-top">
+                        <a href="#" class="top nav-top-active" id="btnki">Contoh 3.1.4</a>
+                        <a href="#" class="top" id="btnkd">Contoh 3.1.5</a>
+                    </div>
+                    <div class="nav-isi" id="ki">
+                        <h3 class="tuju" style="color: black;">Contoh 3.1.1</h3>
+                        <div class="konten" style="height:365px;"><br>
+                            <center><img src="../assets/img/gambar28.jpg" style="width:180px; height:180px;"><br>Gambar 3.5. Sepatu (Sumber: Dokumen Pribadi)</center>
+                            <p class="prf">Amalia membeli sepatu di Toko Sepatu “Arlequin”. Karena menggunakan kartu anggota, maka Amalia mendapat potongan potongan harga sebesar 46.200 rupiah. Sehingga Ia hanya membayar sebesar Rp338.800,00. Berapa persentase diskon yang diperoleh Amalia?</p><br>
+                        
+                            <center><h3>PENJELASAN</h3></center>
+                                <b style="color:blue;">Dikerahui:</b><br>
+                                <ul style="list-style-type:disc; padding: 10px 25px;">
+                                    <li>
+                                        Harga yang harus dibayar oleh Amalia adalah Rp338.800,00
+                                    </li>
+                                    <li>
+                                        Potongan harga yang diperoleh Amalia adalah Rp46.200,00
+                                    </li>
+                                </ul>
+
+                                <br><b style="color:blue;">Ditanya:</b> <br>
+                                    <p class="prf">Berapa persentase diskon yang diperoleh Amalia karena menggunakan kartu anggota?</p><br>
+
+                                <b style="color:blue;">Jawab:</b><br><br>
+
+                                <div>
+                                    <a class="tuju" style="background-color: #ffe194;">INGAT!</a>
+                                        <div class="tuju3">
+                                            <p class="prf">Ingat rumus yang telah kita pelajari sebelumnya:</p>
+                                            <center><img src="../assets/img/Rumus18.png"></center>
+                                
+                                            <p class="prf">Karena kita hanya mengetahui harga beli dan persentase keuntungan yang dieproleh Marda, maka kita akan menyesuaikan rumusnya seperti berikut:</p>
+                                            <center><img src="../assets/img/ket1.png" style="width:406px; height:249px;"></center>
+                                        </div>
+                                </div><br><br>
+
+                                Harga Semula = Diskon + Jumlah yang dibayar<br>
+                                \[ \hspace{2cm} \]= 46.200 + 338.800<br>
+                                \[ \hspace{2cm} \]= 385.000<br><br>
+
+                                Persentase Diskon = \[ \frac{Diskon}{Harga \hspace{0.2cm}Semula} \] × 100%<br>
+                                \[ \hspace{2cm} = \frac{46.200}{385.000} \] × 100%<br>
+                                \[ \hspace{2cm} \]= 10%<br><br>
+
+                                <br><p>Jadi, persentase diskon yang diperoleh Amalia adalah 12%</p>
+                                <br><br>
+                        </div>
+                    </div>
+
+                    <div class="nav-isi hilang" id="kd">
+                        <h3 class="tuju" style="color: black;">Contoh 3.1.5</h3>
+
+                        <div class="konten" style="height:350px;">
+                            <center><img src="../assets/img/gambar29.jpg" style="width:180px; height:180px;"><br>Gambar 3.6. Rak Jajanan Khas Kalimantan (Sumber: Dokumen Pribadi)</center>
+                            <p class="prf">Vivi membeli aneka jajanan khas banjar di toko oleh-oleh dan mendapatkan potongan sehingga membayar sebesar Rp306.000,00. Jika Vivi mengambil produk tersebut pada rak yang bertuliskan diskon 15%, tentukan harga awal produk yang dibeli Vivi!</p><br>
+                        
+                            <center><h3>PENJELASAN</h3></center>
+                                <b style="color:blue;">Dikerahui:</b><br>
+                                <ul style="list-style-type:disc; padding: 10px 25px;">
+                                    <li>
+                                        Harga yang dibayarkan Vivi setelah diskon adalah Rp306.000,00
+                                    </li>
+                                    <li>
+                                        Persentase diskon yang diterima Vivi saat membeli produk adalah 15%
+                                    </li>
+                                </ul>
+
+                                <br><b style="color:blue;">Ditanya:</b> <br>
+                                    <p class="prf">Berapa harga awal produk yang dibeli Vivi sebelum diskon?</p><br>
+
+                                <b style="color:blue;">Jawab:</b> <br>
+                                Harga Semula = \[ \frac{Harga \hspace{0.2cm} setelah \hspace{0.2cm} Diskon}{100% - Persentase \hspace{0.2cm} Diskon} \]<br>
+                                \[ \hspace{2.1cm}= \frac{306.000}{100% - 15%} \]<br>
+                                \[ \hspace{2.1cm}= \frac{306.000}{85%} \]<br>
+                                \[ \hspace{2.1cm}= 306.000 ÷ \frac{85}{100} \]<br>
+                                \[ \hspace{2.1cm}= 306.000 × \frac{100}{85} \]<br>
+                                \[ \hspace{2.1cm} \]= 360.000<br>
+
+                                <br><p>Jadi, harga awal produk yang dibeli oleh Vivi adalah Rp360.000,00.</p>
+                                <br><br>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+            <center>
+                <a href="materi313.html" class="nav_bawah">Sebelumnya</a>
+                <a href="materi311.html" class="nav_bawah">1</a>
+                <a href="materi312.html" class="nav_bawah">2</a>
+                <a href="materi313.html" class="nav_bawah">3</a>
+                <a href="materi314.html" class="nav_bawah navAktif">4</a>
+                <a href="materi315.html" class="nav_bawah">5</a>
+                <a href="materi316.html" class="nav_bawah">6</a>
+                <a href="materi315.html" class="nav_bawah">Selanjutnya</a>
+            </center>
+        </div>
+    </div>
+
+    <script src="../assets/js/sidebar.js"></script>
+
+      <script>
+        let btnki = document.getElementById('btnki');
+        let btnkd = document.getElementById('btnkd');
+        let isiki = document.getElementById('ki');
+        let isikd = document.getElementById('kd');
+
+        btnki.addEventListener('click', function(){
+            console.log('tes1')
+            if(btnki.className.indexOf('nav-top-active') == -1){
+                btnki.classList.toggle('nav-top-active');
+                isiki.classList.toggle('hilang');
+
+                btnkd.classList.toggle('nav-top-active');
+                isikd.classList.toggle('hilang');
+            }
+        })
+
+        btnkd.addEventListener('click', function(){
+            console.log('tes2')
+            if(btnkd.className.indexOf('nav-top-active') == -1){
+                btnki.classList.toggle('nav-top-active');
+                isiki.classList.toggle('hilang');
+
+                btnkd.classList.toggle('nav-top-active');
+                isikd.classList.toggle('hilang');
+            }
+        })
+    </script>
+</body>

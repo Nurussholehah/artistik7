@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/png" href="../assets/img/ikon.png">
+    <title>ARTISTIK</title>
+
+    <!--bootstrap-->
+    <link rel="stylesheet" href="../assets/css/bootstrap.min.css">
+
+    <!-- matjax -->
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+    <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+
+
+    <!-- style -->
+    <link rel="stylesheet" type="text/css" href="../assets/style/semua.css">
+    <link rel="stylesheet" type="text/css" href="../assets/style/materi.css">    
+</head>
+
+<body>
+    <!-- tampilan hp -->
+    <button class="btnSide" onclick="openSide()">
+        <img src="../assets/img/bar.png">
+    </button>
+    <div class="sideNav sideNavDisplay" id="sideNav">
+        <a href="javascript:void(0)" class="tutup" onclick="closeSide()">
+            <img src="../assets/img/close.png">
+        </a>
+        <div class="isinav">
+            <div class="listMateri">
+                <center><a href="../index.html"><img src="../assets/img/ikon2.png"></a></center><br>
+                <hr>
+                <button class="dropdown-btn">1.PENJUALAN DAN PEMBELIAN
+                <img src="../assets/img/drop.png"></a>
+                </button>
+                <div class="dropdown-container">
+                    <a href="materi100.html">Ayo Lihat!</a>
+                    <a href="materi111.html">1.1. Nilai Produk</a>
+                    <a href="materi121.html">1.2. Untung Rugi</a>
+                    <a href="../kuis/kuis1/index.html">Kuis</a>
+                </div>
+                 <button class="dropdown-btn">2. PERSENTASE UNTUNG RUGI DAN BOBOT PRODUK
+                    <img src="../assets/img/drop.png"></a>
+                </button>
+                <div class="dropdown-container" style="display: block;">
+                    <a href="materi200.html">Ayo Lihat!</a>
+                    <a href="materi211.html">2.1. Persentase Untung dan Rugi</a>
+                    <a href="materi221.html" class="active">2.2. Bobot Produk</a>
+                    <a href="../kuis/kuis2/index.html">Kuis</a>
+                </div>
+                <button class="dropdown-btn">3. DISKON, PAJAK, DAN BUNGA TUNGGAL
+                    <img src="../assets/img/drop.png"></a>
+                </button>
+                <div class="dropdown-container">
+                    <a href="materi300.html">Ayo Lihat!</a>
+                    <a href="materi311.html">3.1. Diskon</a>
+                    <a href="materi321.html">3.2. Pajak</a>
+                    <a href="materi331.html">3.3. Bunga Tunggal</a>
+                    <a href="../kuis/kuis3/index.html">Kuis</a>
+                </div>
+                <a href="../evaluasi/index.html" class="peng">Evaluasi</a>
+            </div>
+        </div>
+    </div>
+
+    <!-- tampilan desktop -->
+    <nav class="bar_samping">
+        <center><a href="../index.html"><img src="../assets/img/ikon2.png"></a></center><br>
+        <hr>
+        <div class="listMateri">
+            <button class="dropdown-btn">1.PENJUALAN DAN PEMBELIAN
+                <img src="../assets/img/drop.png"></a>
+            </button>
+            <div class="dropdown-container">
+                <a href="materi100.html">Ayo Lihat!</a>
+                <a href="materi111.html">1.1. Nilai Produk</a>
+                <a href="materi121.html">1.2. Untung Rugi</a>
+                <a href="../kuis/kuis1/index.html">Kuis</a>
+            </div>
+            <button class="dropdown-btn">2. PERSENTASE UNTUNG RUGI DAN BOBOT PRODUK
+                <img src="../assets/img/drop.png"></a>
+            </button>
+            <div class="dropdown-container" style="display: block;">
+                <a href="materi200.html">Ayo Lihat!</a>
+                <a href="materi211.html">2.1. Persentase Untung dan Rugi</a>
+                <a href="materi221.html" class="active">2.2. Bobot Produk</a>
+                <a href="../kuis/kuis2/index.html">Kuis</a>
+            </div>
+            <button class="dropdown-btn"><a href="materi300.html">3. DISKON, PAJAK, DAN BUNGA TUNGGAL
+                <img src="../assets/img/drop.png"></a>
+            </button>
+            <div class="dropdown-container">
+                <a href="materi300.html">Ayo Lihat!</a>
+                <a href="materi311.html" class="">3.1. Diskon</a>
+                <a href="materi321.html">3.2. Pajak</a>
+                <a href="materi331.html">3.3. Bunga Tunggal</a>
+                <a href="../kuis/kuis3/index.html">Kuis</a>
+            </div>
+            <a href="../evaluasi/index.html" class="peng">Evaluasi</a>
+            
+        </div>
+    </nav>
+
+    <div class="isi">
+        <div class="jdl1">
+            <h4>MATEMATIKA</h4>
+            <h4>Aritmatika Sosial</h4>
+        </div>
+        <div class="jdl2">
+            <h5>2.2. Bobot Produk</h5>
+        </div>
+
+        <div class="isi2">
+            <div class="materinya">
+                <p><b>Netto, Bruto, Tara</b></p>
+                <p class="prf">
+                    Neto, Bruto, dan Tara merupakan istilah yang sering digunakan untuk menyatakan berat dalam perdagangan. Pengertian dari Neto, Bruto, Tara adalah sebagai berikut:
+                    <ul style="list-style-type:disc; padding: 10px 25px;">
+                        <li>
+                          Neto diartikan sebagai berat benda tanpa pembungkus bendanya. Neto dikenal sebagai berat bersih suatu produk. Misalnya sebungkus snack memiliki neto 100g, maka artinya berat snack tanpa bungkusnya adalah 100g.  
+                        </li>
+                        <li>
+                           Bruto dapat diartikan berat suatu benda bersama dengan pembungkusnya. Bruto disebut juga berat kotor. 
+                        </li>
+                        <li>
+                            Tara merupakan selisih dari bruto dan neto. Misalnya pada bungkus coklat bertuliskan neto 8g dan brutonya 10g, maka taranya adalah 2g.
+                        </li>
+                    </ul>
+                </p>
+
+                <p class="prf">Secara singkat hubungan bruto, neto, dan tara adalah sebagai berikut:
+
+                    <center><img src="../assets/img/rumus10.png" style="width:400px; height: 225px;"></center>
+                </p>
+
+                <svg height="10" width="100%">
+                        <line x1="0" y1="0" x2="1000" y2="0" style="stroke:#FFD175;stroke-width:25" />
+                </svg>
+                
+                <div class="bg-nav">
+                    <div class="nav-top">
+                        <a href="#" class="top nav-top-active" id="btnki">Contoh 2.2.1</a>
+                        <a href="#" class="top" id="btnkd">Contoh 2.2.2</a>
+                    </div>
+                    <div class="nav-isi" id="ki">
+                        <h3>Contoh 2.2.1</h3>
+                        <div class="konten" style="height:355px;">
+                            <center><img src="../assets/img/gambar19.jpg" style="width:180px; height:180px;"><br>Gambar 2.12. Beras (Sumber: Dokumen Pribadi)</center>
+                            <p class="prf">Seorang pedagang beras menerima kiriman beras dalam karung. Pada setiap karung tertera tulisan: bruto 50 kg, dan setelah ditimbang diketahui netonya sebesar 49.965 g. Apabila pedagang tersebut menerima 50 karung, tentukan berat karung beras seluruhnya!</p><br><br>
+
+                            <center><h3>PENJELASAN</h3></center>
+                                <b style="color:blue;">Diketahui:</b><br>
+                                    <ul style="list-style-type:disc; padding: 10px 25px;">
+                                        <li>
+                                            Bruto adalah 50 kg (50.000 g)
+                                        </li>
+                                        <li>
+                                            Neto adalah 49.965 g
+                                        </li>
+                                        <li>
+                                            Banyak Beras adalah 50 Karung
+                                        </li>
+                                    </ul>
+
+                                <br><b style="color:blue;">Ditanya:</b> <br>
+                                    <p class="prf">Berapa berat karung (tara) beras seluruhnya?</p>
+                                <br>
+
+                                <b style="color:blue;">Jawab:</b> <br>
+                                Tara = Bruto – Neto<br>
+                                \[ \hspace{0.9cm}=\]50.000 – 49.965<br>
+                                \[ \hspace{0.9cm}=\]50<br><br>
+
+                                Berat karung seluruhnya = Banyak Beras × Tara<br>
+                                \[ \hspace{4.8cm}=\] 50 × 35<br>
+                                \[ \hspace{4.8cm}=\] 1.750<br><br>
+
+
+                                <p>Untung = harga jual – harga beli</p>
+                                \[ \hspace{1.5cm}=\]682.500 – 525.000<br>
+                                \[ \hspace{1.5cm}=\]157.500<br><br>
+
+                                <br><p>Jadi berat karung seluruhnya adalah 1.750 g</p>
+                                <br><br>
+                        </div>
+                    </div>
+
+                    <div class="nav-isi hilang" id="kd">
+                        <h3>Contoh 2.2.2</h3><br>
+                        
+                        <div class="konten" style="height:325px;">
+                            <center><img src="../assets/img/gambar20.jpg" style="width:180px; height:180px;"><br>Gambar 2.13. Wafer stik kaleng (Sumber: Dokumen Pribadi)</center>
+                            <p class="prf">Vivi membeli sekaleng wafer stik. Pada kaleng biskuit tertera tulisan berat bersih 1.600 g. Setelah ditimbang kalengnya saja, diketahui bahwa berat kaleng wafer stik tersebut adalah 400 g. Berapakah berat kotornya?</p> <br>
+                        
+                            <center><h3>PENJELASAN</h3></center>
+                                <b style="color:blue;">Dikerahui:</b><br>
+                                <ul style="list-style-type:disc; padding: 10px 25px;">
+                                    <li>
+                                       Bruto adalah 1.600 g 
+                                    </li>
+                                    <li>
+                                        Tara adalah 400 g
+                                    </li>
+                                </ul>
+
+                                <br>
+                                <b style="color:blue;">Ditanya:</b> <br>
+                                <p class="prf">Berapa berat kotor sekaleng wafer stik tersebut?</p>
+
+                                <b style="color:blue;">Jawab:</b><br>
+                                Bruto = Neto + Tara<br>
+                                \[ \hspace{1.2cm} \]= 1.600 + 400<br>
+                                \[ \hspace{1.2cm} \]= 2.000<br>
+                    
+                                <p class="prf">Jadi berat kotor dari sekaleng wafer stik tersebut adalah 2.000 g</p><br/>   
+                        </div>
+                    </div>
+                    </div>
+                </div>
+            </div>
+
+            <center>
+                <a href="materi2111.html" class="nav_bawah">Sebelumnya</a>
+                <a href="materi221.html" class="nav_bawah navAktif">1</a>
+                <a href="materi222.html" class="nav_bawah">2</a>
+                <a href="materi223.html" class="nav_bawah">3</a>
+                <a href="materi224.html" class="nav_bawah">4</a>
+                <a href="materi225.html" class="nav_bawah">5</a>
+                <a href="materi226.html" class="nav_bawah">6</a>
+                <a href="materi222.html" class="nav_bawah">Selanjutnya</a>
+            </center>
+        </div>
+    </div>
+
+    <script src="../assets/js/sidebar.js"></script>
+
+      <script>
+        let btnki = document.getElementById('btnki');
+        let btnkd = document.getElementById('btnkd');
+        let isiki = document.getElementById('ki');
+        let isikd = document.getElementById('kd');
+
+        btnki.addEventListener('click', function(){
+            console.log('tes1')
+            if(btnki.className.indexOf('nav-top-active') == -1){
+                btnki.classList.toggle('nav-top-active');
+                isiki.classList.toggle('hilang');
+
+                btnkd.classList.toggle('nav-top-active');
+                isikd.classList.toggle('hilang');
+            }
+        })
+
+        btnkd.addEventListener('click', function(){
+            console.log('tes2')
+            if(btnkd.className.indexOf('nav-top-active') == -1){
+                btnki.classList.toggle('nav-top-active');
+                isiki.classList.toggle('hilang');
+
+                btnkd.classList.toggle('nav-top-active');
+                isikd.classList.toggle('hilang');
+            }
+        })
+    </script>
+</body>

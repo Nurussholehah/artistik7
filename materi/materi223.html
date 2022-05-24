@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/png" href="../assets/img/ikon.png">
+    <title>ARTISTIK</title>
+
+    <!--bootstrap-->
+    <link rel="stylesheet" href="../assets/css/bootstrap.min.css">
+
+
+    <!-- matjax -->
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+    <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+
+
+    <!-- style -->
+    <link rel="stylesheet" type="text/css" href="../assets/style/semua.css">
+    <link rel="stylesheet" type="text/css" href="../assets/style/materi.css">    
+</head>
+
+<body>
+    <!-- tampilan hp -->
+    <button class="btnSide" onclick="openSide()">
+        <img src="../assets/img/bar.png">
+    </button>
+    <div class="sideNav sideNavDisplay" id="sideNav">
+        <a href="javascript:void(0)" class="tutup" onclick="closeSide()">
+            <img src="../assets/img/close.png">
+        </a>
+        <div class="isinav">
+            <div class="listMateri">
+                <center><a href="../index.html"><img src="../assets/img/ikon2.png"></a></center><br>
+                <hr>
+                <button class="dropdown-btn">1.PENJUALAN DAN PEMBELIAN
+                <img src="../assets/img/drop.png"></a>
+                </button>
+                <div class="dropdown-container">
+                    <a href="materi100.html">Ayo Lihat!</a>
+                    <a href="materi111.html">1.1. Nilai Produk</a>
+                    <a href="materi121.html">1.2. Untung Rugi</a>
+                    <a href="../kuis/kuis1/index.html">Kuis</a>
+                </div>
+                 <button class="dropdown-btn">2. PERSENTASE UNTUNG RUGI DAN BOBOT PRODUK
+                    <img src="../assets/img/drop.png"></a>
+                </button>
+                <div class="dropdown-container" style="display: block;">
+                    <a href="materi200.html">Ayo Lihat!</a>
+                    <a href="materi211.html">2.1. Persentase Untung dan Rugi</a>
+                    <a href="materi221.html" class="active">2.2. Bobot Produk</a>
+                    <a href="../kuis/kuis2/index.html">Kuis</a>
+                </div>
+                <button class="dropdown-btn">3. DISKON, PAJAK, DAN BUNGA TUNGGAL
+                    <img src="../assets/img/drop.png"></a>
+                </button>
+                <div class="dropdown-container">
+                    <a href="materi300.html">Ayo Lihat!</a>
+                    <a href="materi311.html">3.1. Diskon</a>
+                    <a href="materi321.html">3.2. Pajak</a>
+                    <a href="materi331.html">3.3. Bunga Tunggal</a>
+                    <a href="../kuis/kuis3/index.html">Kuis</a>
+                </div>
+                <a href="../evaluasi/index.html" class="peng">Evaluasi</a>
+            </div>
+        </div>
+    </div>
+
+    <!-- tampilan desktop -->
+    <nav class="bar_samping">
+        <center><a href="../index.html"><img src="../assets/img/ikon2.png"></a></center><br>
+        <hr>
+        <div class="listMateri">
+            <button class="dropdown-btn">1.PENJUALAN DAN PEMBELIAN
+                <img src="../assets/img/drop.png"></a>
+            </button>
+            <div class="dropdown-container">
+                <a href="materi100.html">Ayo Lihat!</a>
+                <a href="materi111.html">1.1. Nilai Produk</a>
+                <a href="materi121.html">1.2. Untung Rugi</a>
+                <a href="../kuis/kuis1/index.html">Kuis</a>
+            </div>
+            <button class="dropdown-btn">2. PERSENTASE UNTUNG RUGI DAN BOBOT PRODUK
+                <img src="../assets/img/drop.png"></a>
+            </button>
+            <div class="dropdown-container" style="display: block;">
+                <a href="materi200.html">Ayo Lihat!</a>
+                <a href="materi211.html">2.1. Persentase Untung dan Rugi</a>
+                <a href="materi221.html" class="active">2.2. Bobot Produk</a>
+                <a href="../kuis/kuis2/index.html">Kuis</a>
+            </div>
+            <button class="dropdown-btn"><a href="materi300.html">3. DISKON, PAJAK, DAN BUNGA TUNGGAL
+                <img src="../assets/img/drop.png"></a>
+            </button>
+            <div class="dropdown-container">
+                <a href="materi300.html">Ayo Lihat!</a>
+                <a href="materi311.html" class="">3.1. Diskon</a>
+                <a href="materi321.html">3.2. Pajak</a>
+                <a href="materi331.html">3.3. Bunga Tunggal</a>
+                <a href="../kuis/kuis3/index.html">Kuis</a>
+            </div>
+            <a href="../evaluasi/index.html" class="peng">Evaluasi</a>
+            
+        </div>
+    </nav>
+
+    <div class="isi">
+        <div class="jdl1">
+            <h4>MATEMATIKA</h4>
+            <h4>Aritmatika Sosial</h4>
+        </div>
+        <div class="jdl2">
+            <h5>2.2. Bobot Produk</h5>
+        </div>
+
+        <div class="isi2">
+            <div class="materinya">
+                <center><img src="../assets/img/animasi3.jpg"><br>Sumber: klipartz.com</center>
+
+                <p class="prf">
+                    Selain menghitung nilai neto, bruto, dan tara, kita juga dapat mencari nilai persentase tara pada suatu permasalahan menggunakan rumus berikut:
+                </p>
+
+                <center><img src="../assets/img/Rumus11.png"></center>                
+
+                <svg height="10" width="100%">
+                        <line x1="0" y1="0" x2="1000" y2="0" style="stroke:#FFD175;stroke-width:25" />
+                </svg>
+                
+                <div class="bg-nav">
+                    <div class="nav-top">
+                        <a href="#" class="top nav-top-active" id="btnki">Contoh 2.2.3</a>
+                        <a href="#" class="top" id="btnkd">Contoh 2.2.4</a>
+                    </div>
+                    <div class="nav-isi" id="ki">
+                        <h3>Contoh 2.2.3</h3>
+                        <div class="konten" style="height:350px;"><br>
+                            <center><img src="../assets/img/gambar21.jpg" style="width:180px; height:180px;"><br>Gambar 2.14. Buah Pir (Sumber: Dokumen Pribadi)</center>
+                            <p class="prf">Apabila seorang pedagang membeli sepeti buah pir dengan berat kotor 20 kg dan taranya 2 kg, hitunglah persentase taranya!</p><br><br>
+
+                            <center><h3>PENJELASAN</h3></center>
+                                <b style="color:blue;">Diketahui:</b><br>
+                                    <ul style="list-style-type:disc; padding: 10px 25px;">
+                                        <li>
+                                            Bruto sebuah peti buah pir adalah 20 kg
+                                        </li>
+                                        <li>
+                                            Tara sebuah peti buah pir adalah 2 kg
+                                        </li>
+                                    </ul>
+
+                                <br><b style="color:blue;">Ditanya:</b> <br>
+                                    <p class="prf">Berapa persentase tara peti buah pir?</p>
+                                <br>
+
+                                <b style="color:blue;">Jawab:</b> <br>
+                                Persentase Tara = \[ \frac{Tara}{Bruto} × 100% \]<br>
+                                \[ \hspace{3.1cm}= \frac{2}{20} × 100% \]<br><br>
+                                \[ \hspace{3.1cm}=\]10%<br><br>
+
+                                <br><p>Jadi, persentase tara dari peti buh pir adalah 10%</p>
+                                <br><br>
+                        </div>
+                    </div>
+
+                    <div class="nav-isi hilang" id="kd">
+                        <h3>Contoh 2.2.4</h3><br>
+                        
+                        <div class="konten" style="height:330px;">
+                            <center><img src="../assets/img/gambar22.jpg" style="width:180px; height:180px;"><br>Gambar 2.15. Chocochips (Sumber: Dokumen Pribadi)</center>
+                            <p class="prf">Novi membeli satu karton chocochips yang memiliki berat 15 kg. Apabila  taranya adalah 5%, berapa tara sekarton chocochips yang dibeli Novi?
+                            </p> <br>
+                        
+                            <center><h3>PENJELASAN</h3></center>
+                                <b style="color:blue;">Dikerahui:</b><br>
+                                <ul style="list-style-type:disc; padding: 10px 25px;">
+                                    <li>
+                                       Bruto satu karton chocochips adalah 15 kg
+                                    </li>
+                                    <li>
+                                        Tara dari satu karton chocochips adalah 5%
+                                    </li>
+                                </ul>
+
+                                <br>
+                                <b style="color:blue;">Ditanya:</b> <br>
+                                <p class="prf">Berapa tara sekarton chocochips yang dibeli Novi?</p>
+
+                                <b style="color:blue;">Jawab:</b><br>
+                                Tara = \[ \frac{Persentase \hspace{0.2cm}}{100} × Bruto \]<br>
+                                \[ \hspace{1cm}= \frac{5}{100} × 15 \]<br><br>
+                                \[ \hspace{1cm}=\]0.75<br><br>
+                    
+                                <br><p class="prf">Jadi tara sekarton chocochips yang dibeli Novi adalah 0.75 kg</p><br/>
+                        </div>
+                    </div>
+                    </div>
+                </div>
+            </div>
+
+            <center>
+                <a href="materi222.html" class="nav_bawah">Sebelumnya</a>
+                <a href="materi221.html" class="nav_bawah">1</a>
+                <a href="materi222.html" class="nav_bawah">2</a>
+                <a href="materi223.html" class="nav_bawah navAktif">3</a>
+                <a href="materi224.html" class="nav_bawah">4</a>
+                <a href="materi225.html" class="nav_bawah">5</a>
+                <a href="materi226.html" class="nav_bawah">6</a>
+                <a href="materi224.html" class="nav_bawah">Selanjutnya</a>
+            </center>
+        </div>
+    </div>
+
+    <script src="../assets/js/sidebar.js"></script>
+
+      <script>
+        let btnki = document.getElementById('btnki');
+        let btnkd = document.getElementById('btnkd');
+        let isiki = document.getElementById('ki');
+        let isikd = document.getElementById('kd');
+
+        btnki.addEventListener('click', function(){
+            console.log('tes1')
+            if(btnki.className.indexOf('nav-top-active') == -1){
+                btnki.classList.toggle('nav-top-active');
+                isiki.classList.toggle('hilang');
+
+                btnkd.classList.toggle('nav-top-active');
+                isikd.classList.toggle('hilang');
+            }
+        })
+
+        btnkd.addEventListener('click', function(){
+            console.log('tes2')
+            if(btnkd.className.indexOf('nav-top-active') == -1){
+                btnki.classList.toggle('nav-top-active');
+                isiki.classList.toggle('hilang');
+
+                btnkd.classList.toggle('nav-top-active');
+                isikd.classList.toggle('hilang');
+            }
+        })
+    </script>
+</body>

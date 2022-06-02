@@ -1,0 +1,16 @@
+{
+	"folders": [
+		{
+			"path": ".."
+		},
+		{
+			"path": "..\\..\\ZIP\\soal random"
+		},
+		{
+			"path": "..\\..\\satu"
+		}
+	],
+	"settings": {
+		"liveServer.settings.multiRootWorkspaceName": "relasidanfungsi"
+	}
+}

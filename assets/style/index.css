@@ -59,7 +59,7 @@ button{
 }
 
 .nav-link{
-	color:#ffff;
+	color:#000;
 }
 
 .active{
@@ -101,6 +101,11 @@ footer{
 	border-radius: 15px;
 }
 
+@font-face{
+	font-family:"Pacifico-Regular";
+	src:url(../fonts/Pacifico-Regular.ttf);
+}
+
 /* CSS HANDPHONE */
 @media screen and (max-width: 900px) {
     .col{
@@ -129,4 +134,4 @@ footer{
 @font-face{
 	font-family:"Pacifico-Regular";
 	src:url(../fonts/Pacifico-Regular.ttf);
-}
+}}

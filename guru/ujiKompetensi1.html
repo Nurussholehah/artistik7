@@ -1,0 +1,206 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>Daftar Nilai Uji Kompetensi 1 Siswa</title>
+    <link rel="shortcut icon" href="../assets/images/journal-text.svg" type="image/x-icon" />
+
+    <!-- Bootstrap core CSS -->
+    <link href="../assets/dist/css/bootstrap.min.css" rel="stylesheet">
+
+
+
+    <link rel="stylesheet" href="https://cdn.datatables.net/1.11.5/css/dataTables.bootstrap5.min.css">
+    <script src="https://code.jquery.com/jquery-3.5.1.js"></script>
+    <script src="https://cdn.datatables.net/1.11.5/js/jquery.dataTables.min.js"></script>
+    <script src="https://cdn.datatables.net/1.11.5/js/dataTables.bootstrap5.min.js"></script>
+
+
+    <!-- <link rel="stylesheet" href="https://cdn.datatables.net/1.11.3/css/jquery.dataTables.min.css">
+
+    <script src="https://code.jquery.com/jquery-3.5.1.js"></script>
+    <script src="https://cdn.datatables.net/1.11.3/js/jquery.dataTables.min.js"></script> -->
+    <style>
+        @import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.6.1/font/bootstrap-icons.css");
+
+        .cap {
+            text-transform: capitalize;
+        }
+    </style>
+
+
+    <!-- Custom styles for this template -->
+    <link href="dashboard.css" rel="stylesheet">
+</head>
+
+<body>
+
+    <header class="navbar navbar-dark sticky-top bg-dark flex-md-nowrap p-0 shadow">
+        <a class="navbar-brand col-md-3 col-lg-2 me-0 px-3" href="#" id="namaGuru">Guru</a>
+        <button class="navbar-toggler position-absolute d-md-none collapsed" type="button" data-bs-toggle="collapse"
+            data-bs-target="#sidebarMenu" aria-controls="sidebarMenu" aria-expanded="false"
+            aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+    </header>
+
+    <div class="container-fluid">
+        <div class="row">
+            <nav id="sidebarMenu" class="col-md-3 col-lg-2 d-md-block bg-light sidebar collapse">
+                <div class="position-sticky pt-3">
+
+                    <h6
+                        class="sidebar-heading d-flex justify-content-between align-items-center px-3 mt-4 mb-1 text-muted">
+                        <span>Daftar Nilai</span>
+
+                    </h6>
+                    <ul class="nav flex-column mb-2">
+                        <li class="nav-item">
+                            <a class="nav-link" href="token.html">
+                                <span class="fs-5"><i class="bi bi-file-text"></i></span>
+                                TOKEN
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="pretest.html">
+                                <span class="fs-5"><i class="bi bi-file-text"></i></span>
+                                PRATEST
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active" href="ujiKompetensi1.html">
+                                <span class="fs-5"><i class="bi bi-file-text"></i></span>
+
+                                UJI KOMPETENSI 1
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="ujiKompetensi2.html">
+                                <span class="fs-5"><i class="bi bi-file-text"></i></span>
+                                UJI KOMPETENSI 2
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="evaluasi.html">
+                                <span class="fs-5"><i class="bi bi-file-text"></i></span>
+                                EVALUASI
+                            </a>
+                        </li>
+                        <hr>
+                        <li class="nav-item">
+                            <a class="nav-link" href="guruLogin.html">
+                                <span class="fs-5"><i class="bi bi-box-arrow-right"></i></span>
+                                Sign out
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+
+            <main class="col-md-9 ms-sm-auto col-lg-10 px-md-4">
+                <div
+                    class="d-flex justify-content-center flex-wrap flex-md-nowrap align-items-center pt-3 pb-2 mb-3 border-bottom">
+                    <h1 class="h2 text-center">Daftar Nilai Siswa Uji Kompetensi 1</h1>
+
+                </div>
+                <div class="table-responsive">
+                    <table class="table table-bordered  table-sm border-secondary display" id="tampilData">
+                        <thead class="text-center border-secondary table-info border">
+                            <tr>
+                                <th scope="col">No</th>
+                                <th scope="col">Nama</th>
+                                <th scope="col">Kelas</th>
+                                <th scope="col">Nilai</th>
+                                <th scope="col">Waktu Selesai</th>
+
+
+                            </tr>
+                        </thead>
+                        <!-- <tbody></tbody> -->
+                    </table>
+                </div>
+            </main>
+        </div>
+    </div>
+
+    <script src="https://www.gstatic.com/firebasejs/7.24.0/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/7.24.0/firebase-analytics.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/7.24.0/firebase-database.js"></script>
+    <script src="../assets/dist/js/bootstrap.bundle.min.js"></script>
+
+    <script>
+        const firebaseConfig = {
+            apiKey: "AIzaSyDfe1VSNQUlNAdaw2ICfQyj7O3KLOJCIJM",
+            authDomain: "relasi-dan-fungsi.firebaseapp.com",
+            databaseURL: "https://relasi-dan-fungsi-default-rtdb.firebaseio.com",
+            projectId: "relasi-dan-fungsi",
+            storageBucket: "relasi-dan-fungsi.appspot.com",
+            messagingSenderId: "480693162806",
+            appId: "1:480693162806:web:c3cf4a4a0cac7e074c1997",
+            measurementId: "G-7NK8FT7GP2"
+        };
+
+        firebase.initializeApp(firebaseConfig);
+
+
+        database = firebase.database();
+        var ref = database.ref("ujiKompetensi1");
+        var idx = 0;
+
+        let tp = document.querySelector('#tampilData');
+
+        let dataa = [];
+        $(document).ready(function () {
+            ref.on("child_added", function (data) {
+
+                idx += 1;
+
+                let dat = [];
+                var v = data.val();
+                dat.push(idx)
+                dat.push(v.name);
+                dat.push(v.class);
+                dat.push(v.score);
+                dat.push(v.date);
+
+                dataa.push(dat);
+            })
+
+        });
+        setTimeout(myGreeting, 3000);
+
+        function myGreeting() {
+            // console.log(dataa)
+            $('#tampilData').DataTable({
+                data: dataa
+            });
+        }
+    </script>
+</body>
+
+</html>
+
+<!-- $(document).ready(function () {
+ref.on("child_added", function (data) {
+idx += 1;
+
+var vl = data.val();
+
+tp.innerHTML +=
+`<tr>
+    <td class="text-center">${idx}</td>
+    <td class="cap">${vl.name}</td>
+    <td class="text-center">${vl.class}</td>
+    <td class="text-center">${vl.score}</td>
+    <td class="text-center">${vl.date}</td>
+
+</tr>`;
+// $('#tampilData').DataTable();
+
+})
+
+}); -->

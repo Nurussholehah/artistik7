@@ -1,0 +1,121 @@
+<!doctype html>
+<html lang="en">
+
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="shortcut icon" href="../assets/images/journal-text.svg" type="image/x-icon" />
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="../assets/dist/css/bootstrap.min.css">
+    <script src="../assets/dist/js/sweetalert2.all.min.js"></script>
+
+
+    <title>Halaman Guru</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Josefin+Sans&display=swap');
+
+        html,
+        body {
+            height: 100%;
+        }
+
+        body {
+            display: flex;
+            font-family: 'Josefin Sans', sans-serif;
+            align-items: center;
+            padding-top: 40px;
+            padding-bottom: 40px;
+            background-color: #f5f5f5;
+            background-image: url("../assets/images/pattern.png");
+        }
+
+        .form-signin {
+            width: 100%;
+            max-width: 330px;
+            padding: 15px;
+            margin: auto;
+        }
+
+        .form-signin .checkbox {
+            font-weight: 400;
+        }
+
+        .form-signin .form-floating:focus-within {
+            z-index: 2;
+        }
+
+        .form-signin input[type="email"] {
+            margin-bottom: -1px;
+            border-bottom-right-radius: 0;
+            border-bottom-left-radius: 0;
+        }
+
+        .form-signin input[type="password"] {
+            margin-bottom: 10px;
+            border-top-left-radius: 0;
+            border-top-right-radius: 0;
+        }
+    </style>
+</head>
+
+<body>
+    <main class="form-signin bg-light border rounded shadow-lg">
+        <!-- <form> -->
+        <h1 class="h3 mb-3 fw-normal text-center">
+            Selamat Datang
+            <img class="" src="../assets/images/guru_log.png" width="80%" alt="">
+
+
+        </h1>
+
+        <div class="form-floating">
+            <input type="text" class="form-control" id="namaGuru" placeholder="name@example.com">
+            <label for="namaGuru">Nama guru</label>
+        </div>
+        <div class="form-floating">
+            <input type="password" class="form-control" id="kataSandi" placeholder="Password">
+            <label for="kataSandi">Kata Sandi</label>
+        </div>
+
+        <button class="mt-5 mb-3 w-100 btn btn-lg btn-primary" id="submit" type="submit">Masuk</button>
+        <!-- <p class="mt-5 mb-3 text-muted">&copy; 2017–2021</p> -->
+        <!-- </form> -->
+    </main>
+
+    <script>
+        var
+            _0x899a = ["\x23\x6E\x61\x6D\x61\x47\x75\x72\x75", "\x71\x75\x65\x72\x79\x53\x65\x6C\x65\x63\x74\x6F\x72",
+                "\x23\x6B\x61\x74\x61\x53\x61\x6E\x64\x69", "\x23\x73\x75\x62\x6D\x69\x74", "\x63\x6C\x69\x63\x6B",
+                "\x76\x61\x6C\x75\x65", "", "\x31\x32\x33\x34\x35", "\x6E\x61\x6D\x61", "\x73\x65\x74\x49\x74\x65\x6D",
+                "\x6B\x61\x74\x61\x73\x61\x6E\x64\x69", "\x68\x72\x65\x66",
+                "\x70\x72\x65\x74\x65\x73\x74\x2E\x68\x74\x6D\x6C",
+                "\x50\x61\x73\x73\x77\x6F\x72\x64\x20\x73\x61\x6C\x61\x68", "\x65\x72\x72\x6F\x72", "\x66\x69\x72\x65",
+                "\x61\x64\x64\x45\x76\x65\x6E\x74\x4C\x69\x73\x74\x65\x6E\x65\x72"
+            ];
+        let
+            namaguru = document[_0x899a[1]](_0x899a[0]);
+        let katasandi = document[_0x899a[1]](_0x899a[2]);
+        let
+            btnSubmit = document[_0x899a[1]](_0x899a[3]);
+        btnSubmit[_0x899a[16]](_0x899a[4], function () {
+            if (namaguru[_0x899a[5]] !==
+                _0x899a[6] && katasandi[_0x899a[5]] ===
+                _0x899a[7]) {
+                sessionStorage[_0x899a[9]](_0x899a[8], namaguru[_0x899a[5]]);
+                sessionStorage[_0x899a[9]](_0x899a[10], katasandi[_0x899a[5]]);
+                location[_0x899a[11]] =
+                    _0x899a[12]
+            } else {
+                Swal[_0x899a[15]](_0x899a[13], _0x899a[6], _0x899a[14])
+            }
+        })
+    </script>
+
+    <script src="../assets/dist/js/bootstrap.bundle.min.js"></script>
+
+</body>
+
+</html>

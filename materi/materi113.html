@@ -6,6 +6,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="icon" type="image/png" href="../assets/img/ikon.png">
     <title>ARTISTIK</title>
+    
+    <script type="text/javascript" src="../assets/js/tandaPemisah.js"></script>
 
     <!--bootstrap-->
     <link rel="stylesheet" href="../assets/css/bootstrap.min.css">
@@ -120,7 +122,7 @@
                         <ul style="list-style-type:disc; padding: 10px 25px;">
                             <li>Baca soal dengan teliti;</li>
                             <li>Tulis jawaban yang tepat di kolom Jawaban yang sudah disediakan;</li>
-                            <li>Perhatikan format peulisan jawaban pada langkah peyelasian hanya menggunakan angka saja sebagaimana contoh, contoh:<b>38.725</b>;</li>
+                            <li>Perhatikan format peulisan jawaban pada langkah peyelasian hanya menggunakan angka saja;</li>
                             <li>Perhatikan format peulisan jawaban pada kesimpulan jawaban sebagaimana contoh, contoh:<b>Rp38.725,00</b>;</li>
                             <li>Jika jawaban benar, kotak akan berwarna hijau;</li>
                             <li>Jika jawaban salah, kotak akan berwarna merah;</li>
@@ -137,16 +139,16 @@
                         <b style="color:blue;">Diketahui:</b> <br>
                             <ul style="padding: 10px 25px;">
                                 <li>
-                                    Harga Wadai Ilat Sapi adalah Rp <input type="text" style="width:110px" id="b1" onchange="cek1()">,00
+                                    Harga Wadai Ilat Sapi adalah Rp <input type="text" style="width:50px" id="b1" onblur="cek1()" onkeydown="return numbersonly(this, event);" onkeyup="javascript:tandaPemisahTitik(this);">,00
                                 </li>
                                 <li>
-                                    Jumlah Wadai Ilat Sapi adalah <input type="text" style="width:50px" id="b2" onchange="cek2()"> Bungkus
+                                    Jumlah Wadai Ilat Sapi adalah <input type="text" style="width:50px" id="b2" onblur="cek2()" onkeydown="return numbersonly(this, event);" onkeyup="javascript:tandaPemisahTitik(this);"> Bungkus
                                 </li>
                                 <li>
-                                    Harga Ikan saluang krispi adalah Rp <input type="text" style="width:110px" id="b3" onchange="cek3()">,00
+                                    Harga Ikan saluang krispi adalah Rp <input type="text" style="width:50px" id="b3" onblur="cek3()" onkeydown="return numbersonly(this, event);" onkeyup="javascript:tandaPemisahTitik(this);">,00
                                 </li>
                                 <li>
-                                    Harga keseluruhan adalah Rp <input type="text" style="width:110px" id="b4" onchange="cek4()">,00
+                                    Harga keseluruhan adalah Rp <input type="text" style="width:50px" id="b4" onblur="cek4()"  onkeydown="return numbersonly(this, event);" onkeyup="javascript:tandaPemisahTitik(this);">,00
                                 </li>        
                             </ul> <br>
                         
@@ -156,32 +158,30 @@
                         <br/><b style="color:blue;">Jawab:</b><br/>
                         1) Nilai keseluruhan wadai ilat sapi <br>
                         \[ \hspace{0.5cm}\]Nilai Keseluruhan = Banyak Unit × Nilai Per Unit <br>
-                        \[ \hspace{3.6cm}\] = <input type="text" style="width:110px" id="b5" onchange="cek5()"> × <input type="text" style="width:110px" id="b6" onchange="cek6()"><br>
-                        \[ \hspace{3.6cm}\] = <input type="text" style="width:110px" id="b7" onchange="cek7()">
+                        \[ \hspace{3.6cm}\] = <input type="text" style="width:50px" id="b5" onblur="cek5()" onkeydown="return numbersonly(this, event);" onkeyup="javascript:tandaPemisahTitik(this);"> × <input type="text" style="width:50px" id="b6" onblur="cek6()" onkeydown="return numbersonly(this, event);" onkeyup="javascript:tandaPemisahTitik(this);"><br>
+                        \[ \hspace{3.6cm}\] = <input type="text" style="width:50px" id="b7" onblur="cek7()" onkeydown="return numbersonly(this, event);" onkeyup="javascript:tandaPemisahTitik(this);">
 
                         <br><br>
                         2) Nilai keseluruhan Saluang krispi<br>
                         \[ \hspace{0.5cm}\]Nilai Saluang Krispi = Nilai Keseluruhan pembelian – Nilai keseluruhanwadai ilat sapi<br>
-                        \[ \hspace{3.9cm}\] = <input type="text" style="width:110px" id="b8" onchange="cek8()"> – <input type="text" style="width:110px" id="b9" onchange="cek9()"><br>
-                        \[ \hspace{3.9cm}\] = <input type="text" style="width:110px" id="b10" onchange="cek10()">
-
-                        <br><br>
+                        \[ \hspace{3.9cm}\] = <input type="text" style="width:50px" id="b8" onblur="cek8()" onkeydown="return numbersonly(this, event);" onkeyup="javascript:tandaPemisahTitik(this);"> – <input type="text" style="width:50px" id="b9" onblur="cek9()" onkeydown="return numbersonly(this, event);" onkeyup="javascript:tandaPemisahTitik(this);"><br>
+                        \[ \hspace{3.9cm}\] = <input type="text" style="width:50px" id="b10" onblur="cek10()" onkeydown="return numbersonly(this, event);" onkeyup="javascript:tandaPemisahTitik(this);"><br><br>
                         3) Banyak Unit Ikan Saluang Krispi<br><br>
                         \[ \hspace{0.5cm} Nilai\hspace{0.2cm} Satuan = \frac {Nilai\hspace{0.2cm} Keseluruhan}{Banyak\hspace{0.2cm} Unit}\]<br/>
 
                         <table>
                             <tr>
                                 <td rowspan="2">\[ \hspace{3.1 cm}=\]</td>
-                                <td class="garis"><input type="text" style="width:90px" id="b11" onchange="cek11()"></td>
+                                <td class="garis"><input type="text" style="width:50px" id="b11" onblur="cek11()" onkeydown="return numbersonly(this, event);" onkeyup="javascript:tandaPemisahTitik(this);"></td>
                             </tr>
                             <tr style="text-align:center">
-                                <td><input type="text" style="width:50px" id="b12" onchange="cek12()"></td>
+                                <td><input type="text" style="width:50px" id="b12" onblur="cek12()" onkeydown="return numbersonly(this, event);" onkeyup="javascript:tandaPemisahTitik(this);"></td>
                             </tr>
                         </table>
 
-                        <br>\[ \hspace{3.2cm}=\] <input type="text" style="width:110px"  id="b13" onchange="cek13()"> <br/>
+                        <br>\[ \hspace{3.2cm}=\] <input type="text" style="width:50px"  id="b13" onblur="cek13()" onkeydown="return numbersonly(this, event);" onkeyup="javascript:tandaPemisahTitik(this);"><br/>
                         
-                        <p class="prf"> Jadi, jumlah ikan saluang krispi yang dibeli Anggun adalah <input type="text" style="width:110px"  id="b14" onchange="cek14()"> bungkus.</p><br>
+                        <p class="prf"> Jadi, jumlah ikan saluang krispi yang dibeli Anggun adalah <input type="text" style="width:50px"  id="b14" onblur="cek14()" onkeydown="return numbersonly(this, event);" onkeyup="javascript:tandaPemisahTitik(this);"> bungkus.</p><br>
                     </form>
                 </div>
             </div>

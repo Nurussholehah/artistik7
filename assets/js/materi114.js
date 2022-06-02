@@ -52,7 +52,7 @@ for (let i=0; i<cek.length; i++){
 		if (i==1) {
 			let ans=document.getElementById(jwb).value
 			//untuk mencek jawaban pengguna
-			if(ans==10){
+			if(ans==8){
 				let ket=document.querySelector(".keterangan"+i)
 				ket.innerHTML="<p style='color:green;'>Jawaban Benar</p>"
 			}
@@ -94,7 +94,7 @@ for (let i=0; i<cek.length; i++){
 		if (i==4) {
 			let ans=document.getElementById(jwb).value
 			//untuk mencek jawaban pengguna
-			if(ans==201.000 || ans=="210000"){
+			if(ans==201.000 || ans=="201000"){
 				let ket=document.querySelector(".keterangan"+i)
 				ket.innerHTML="<p style='color:green;'>Jawaban Benar</p>"
 			}

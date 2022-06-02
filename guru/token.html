@@ -1,0 +1,243 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>Daftar Nilai Pretest Siswa</title>
+    <link rel="shortcut icon" href="../assets/images/journal-text.svg" type="image/x-icon" />
+
+    <!-- Bootstrap core CSS -->
+    <link href="../assets/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="dashboard.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.0.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <!-- <link rel="stylesheet" href="https://cdn.datatables.net/1.11.3/css/dataTables.bootstrap5.min.css"> -->
+    <!-- <script src="https://code.jquery.com/jquery-3.5.1.js"></script> -->
+    <!-- <script src="https://cdn.datatables.net/1.11.3/js/jquery.dataTables.min.js
+"></script>
+    <script src="https://cdn.datatables.net/1.11.3/js/dataTables.bootstrap5.min.js
+"></script> -->
+    <script>
+        window.onload = function awal() {
+            rootRef.on('value', function (snapshot) {
+                document.getElementById("kuis1Pretest").innerHTML = snapshot.child('kuis1Pretest').val();
+                document.getElementById("kuis2UjiKomp1").innerHTML = snapshot.child('kuis2UjiKomp1').val();
+                document.getElementById("kuis3UjiKomp2").innerHTML = snapshot.child('kuis3UjiKomp2').val();
+                document.getElementById("evaluasiAkhir").innerHTML = snapshot.child('evaluasiAkhir').val();
+            });
+
+
+        };
+    </script>
+</head>
+
+<body>
+
+    <header class="navbar navbar-dark sticky-top bg-dark flex-md-nowrap p-0 shadow">
+        <a class="navbar-brand col-md-3 col-lg-2 me-0 px-3" href="#">Guru</a>
+        <button class="navbar-toggler position-absolute d-md-none collapsed" type="button" data-bs-toggle="collapse"
+            data-bs-target="#sidebarMenu" aria-controls="sidebarMenu" aria-expanded="false"
+            aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <!-- <p class="form-control form-control-dark w-100" type="text"></p> -->
+
+    </header>
+
+    <div class="container-fluid">
+        <div class="row">
+            <nav id="sidebarMenu" class="col-md-3 col-lg-2 d-md-block bg-light sidebar collapse">
+                <div class="position-sticky pt-3">
+
+                    <h6
+                        class="sidebar-heading d-flex justify-content-between align-items-center px-3 mt-4 mb-1 text-muted">
+                        <span>Daftar Nilai</span>
+
+                    </h6>
+                    <ul class="nav flex-column mb-2">
+                        <li class="nav-item">
+                            <a class="nav-link active" href="token.html">
+                                <span class="fs-5"><i class="bi bi-file-text"></i></span>
+                                Edit token siswa
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="pretest.html">
+                                <span class="fs-5"><i class="bi bi-file-text"></i></span>
+                                PRETEST
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="ujiKompetensi1.html">
+                                <span class="fs-5"><i class="bi bi-file-text"></i></span>
+
+                                UJI KOMPETENSI 1
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="ujiKompetensi2.html">
+                                <span class="fs-5"><i class="bi bi-file-text"></i></span>
+                                UJI KOMPETENSI 2
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="evaluasi.html">
+                                <span class="fs-5"><i class="bi bi-file-text"></i></span>
+                                EVALUASI
+                            </a>
+                        </li>
+                        <hr>
+                        <li class="nav-item">
+                            <a class="nav-link" href="guruLogin.html">
+                                <span class="fs-5"><i class="bi bi-box-arrow-right"></i></span>
+                                Sign out
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+
+            <main class="col-md-9 ms-sm-auto col-lg-10 px-md-4">
+                <div
+                    class="d-flex justify-content-center flex-wrap flex-md-nowrap align-items-center pt-3 pb-2 mb-3 border-bottom">
+                    <h1 class="h2 text-center">Daftar Nilai Siswa Pratest</h1>
+
+                </div>
+                <div class="table-responsive">
+                    <!-- <table class="table table-bordered  table-sm border-secondary" id="tampilData">
+                        <thead class="text-center border-secondary table-info border">
+                            <tr>
+                                <th scope="col">No</th>
+                                <th scope="col">Nama</th>
+                                <th scope="col">Kelas</th>
+                                <th scope="col">Nilai</th>
+                                <th scope="col">Waktu Selesai</th>
+                            </tr>
+                        </thead>
+                        <tbody id="tampil"></tbody>
+                    </table> -->
+                    <table class="table  border-dark table-bordered " style="width: 70%">
+                        <tr class="text-center bg-light">
+                            <th>Kegiatan</th>
+                            <th>Token</th>
+                            <th>Aksi</th>
+                        </tr>
+                        <tr>
+                            <td>Pretest</td>
+                            <td id="kuis1Pretest"></td>
+                            <td class="text-center">
+                                <button class="btn btn-primary" id="ganti1">Ganti</button>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>Uji Kompetensi 1</td>
+                            <td id="kuis2UjiKomp1"></td>
+                            <td class="text-center">
+                                <button class="btn btn-primary" id="ganti2">Ganti</button>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>Uji Kompetensi 2</td>
+                            <td id="kuis3UjiKomp2"></td>
+                            <td class="text-center">
+                                <button class="btn btn-primary" id="ganti3">Ganti</button>
+
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>Evaluasi</td>
+                            <td id="evaluasiAkhir"></td>
+                            <td class="text-center">
+                                <button class="btn btn-primary" id="ganti4">Ganti</button>
+                            </td>
+                        </tr>
+                    </table>
+                </div>
+            </main>
+        </div>
+    </div>
+
+
+    <script src="https://www.gstatic.com/firebasejs/7.24.0/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/7.24.0/firebase-analytics.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/7.24.0/firebase-database.js"></script>
+    <script src="../assets/dist/js/bootstrap.bundle.min.js"></script>
+
+    <script>
+        // $(document).ready(function () {
+        //     $('#tampilData').DataTable();
+        // });
+        const firebaseConfig = {
+            apiKey: "AIzaSyDfe1VSNQUlNAdaw2ICfQyj7O3KLOJCIJM",
+            authDomain: "relasi-dan-fungsi.firebaseapp.com",
+            databaseURL: "https://relasi-dan-fungsi-default-rtdb.firebaseio.com",
+            projectId: "relasi-dan-fungsi",
+            storageBucket: "relasi-dan-fungsi.appspot.com",
+            messagingSenderId: "480693162806",
+            appId: "1:480693162806:web:c3cf4a4a0cac7e074c1997",
+            measurementId: "G-7NK8FT7GP2"
+        };
+
+        firebase.initializeApp(firebaseConfig);
+        var rootRef = firebase.database().ref().child('token');
+
+        // database = firebase.database();
+        // var ref = database.ref("pretest");
+        // var idx = 0;
+
+        // let tp = document.querySelector('#tampil');
+
+        // ref.on("child_added", function (data) {
+        //     idx += 1;
+
+        //     var vl = data.val();
+
+        //     tp.innerHTML +=
+        //         `<tr>
+        //      <td class="tdX" style="text-align: center">${idx}</td>
+        //      <td class="tdX">${vl.name}</td>
+        //      <td class="tdX" style="text-align: center">${vl.class}</td>
+        //      <td class="tdX" style="text-align: center">${vl.score}</td>
+        //      <td class="tdX" style="text-align: center">${vl.date}</td>
+        //  </tr>`;
+
+        // })
+
+        $('#ganti1').click(function () {
+            var person = prompt("Masukkan token baru", document.getElementById("kuis1Pretest").innerHTML);
+            if (person != null) {
+                rootRef.update({
+                    kuis1Pretest: person,
+                });
+            }
+        });
+        $('#ganti2').click(function () {
+            var person1 = prompt("Masukkan token baru", document.getElementById("kuis2UjiKomp1").innerHTML);
+            if (person1 != null) {
+                rootRef.update({
+                    kuis2UjiKomp1: person1,
+                });
+            }
+        });
+        $('#ganti3').click(function () {
+            var person2 = prompt("Masukkan token baru", document.getElementById("kuis3UjiKomp2").innerHTML);
+            if (person2 != null) {
+                rootRef.update({
+                    kuis3UjiKomp2: person2,
+                });
+            }
+        });
+        $('#ganti4').click(function () {
+            var person3 = prompt("Masukkan token baru", document.getElementById("evaluasiAkhir").innerHTML);
+            if (person3 != null) {
+                rootRef.update({
+                    evaluasiAkhir: person3,
+                });
+            }
+        });
+    </script>
+</body>
+
+</html>

@@ -169,7 +169,7 @@ hr{
     border-radius: 8px;
     border: 2px solid #ffe194;
     padding: 15px;
-    height: 72vh;
+    height: 69vh;
     margin-bottom: 15px;
     overflow: auto;
 }
@@ -216,13 +216,13 @@ hr{
     color: white;
     background-color: var(--btnhvr);
     width: fit-content;
-    padding: 8px;
+    padding: 5px;
     border-radius: 8px 8px 0 0;
 }
 
 .tuju1 {
     background-color: white;
-    padding: 10px 25px;
+    padding: 5px 25px;
     border-radius: 0 0 8px 8px;
     border: 2px solid #88dfd8;
     margin-bottom: 16px;
@@ -230,7 +230,7 @@ hr{
 
 .tuju2 {
     background-color: #cdffe9;
-    padding: 10px 25px;
+    padding: 5px 25px;
     border-radius: 0 0 8px 8px;
     border: 2px solid #88dfd8;
     margin-bottom: 16px;
@@ -238,7 +238,7 @@ hr{
 
 .tuju3 {
     background-color: #cdffe9;
-    padding: 10px 25px;
+    padding: 5px 25px;
     border-radius: 0;
     border: 2px solid #88dfd8;
     margin-top: 5px;
